@@ -1,11 +1,14 @@
 :!! echo download tSQLt from https://tsqlt.org/download/tsqlt/
-:!! curl https://tsqlt.org/download/tsqlt/ -o $(DEMOSOLUTIONPATH)\tSQLt\tSQLt.zip
-:!! tar -xf $(DEMOSOLUTIONPATH)\tSQLt\tSQLt.zip -C $(DEMOSOLUTIONPATH)\tSQLt\
+:!! if not exist "$(DEMOSOLUTIONPATH)\tSQLt\temp\" mkdir "$(DEMOSOLUTIONPATH)\tSQLt\temp\"
+:!! curl https://tsqlt.org/download/tsqlt/ -o "$(DEMOSOLUTIONPATH)\tSQLt\temp\tSQLt.zip"
+:!! tar -xf "$(DEMOSOLUTIONPATH)\tSQLt\temp\tSQLt.zip" -C "$(DEMOSOLUTIONPATH)\tSQLt\temp\\"
+
 
 /*-- Run this once per server with sysadmin permissions
-:r $(DEMOSOLUTIONPATH)\tSQLt\PrepareServer.sql
+:r $(DEMOSOLUTIONPATH)\tSQLt\temp\PrepareServer.sql
 GO
 --*/
 
-:r $(DEMOSOLUTIONPATH)\tSQLt\tSQLt.class.sql
+:r $(DEMOSOLUTIONPATH)\tSQLt\temp\tSQLt.class.sql
 GO
+

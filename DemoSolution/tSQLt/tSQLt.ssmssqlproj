@@ -4,7 +4,7 @@
     <LogicalFolder Name="Connections" Type="2" Sorted="true">
       <Items>
         <ConnectionNode Name="localhost,41433:sa">
-          <Created>2021-03-29T22:29:11.2501365-04:00</Created>
+          <Created>2021-03-29T23:04:11.0921822-04:00</Created>
           <Type>SQL</Type>
           <Server>localhost,41433</Server>
           <UserName>sa</UserName>
