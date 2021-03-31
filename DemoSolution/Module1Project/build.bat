@@ -2,9 +2,11 @@
 pushd "%~dp0"
 
 echo ----------------------------- PLEASE READ --------------------------------
-echo This batch script requires two Environment Variables.
+echo This batch script requires one environment variables, "MODULE1DEMODB"
 echo Please set them using SETX in the cmd line and then restart SSMS, eg "SETX MODULE1DEMODB module1demo"
 echo You must set both MODULE1DEMODB, the name of the database, and DEMOSOLUTIONPATH, the path to the SSMS Solution.
+
+if not defined MODULE1DEMODB set MODULE1DEMODB=module1demodb
 
 echo.
 echo - Building and Deploying Project ----------------------------------------

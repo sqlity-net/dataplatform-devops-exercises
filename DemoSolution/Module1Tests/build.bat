@@ -2,8 +2,6 @@
 pushd "%~dp0"
 
 echo ---------------------------------- TODO ----------------------------------
-echo 4. Add run build script to tools menu
-echo 5. get rid of red for download of tSQLt in curl
 echo 6. Nice to have, in Module1Project build.sql, how can we list the files being read with :r?
 echo.
 
