@@ -29,7 +29,7 @@ If the original repository that you forked (the "upstream" repository) changes, 
 
 
 2) Confirm that there are changes to pull by clicking the compare link:
-   ![image](https://user-images.githubusercontent.com/298017/113211187-2cfa5700-9243-11eb-8be2-c48bd3863cba.png)
+   ![image](https://user-images.githubusercontent.com/298017/113216446-5ff41900-924a-11eb-8b70-3c0d2b2f6b4b.png)
 
 
 3) **CAREFULL!** This will lead you to the upstream repository. To get back to your own repository, click the "switching the base" link:
