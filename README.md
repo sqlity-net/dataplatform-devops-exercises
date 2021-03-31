@@ -44,4 +44,38 @@ If the original repository that you forked (the "upstream" repository) changes, 
     ![image](https://user-images.githubusercontent.com/298017/113212441-c2e2b180-9244-11eb-9d5c-b75a00d4c55e.png)
 
 
-6)   
+6) Now you can review the changes and write a comment. Finally you need to click the "Create pull request" button one more time:
+   ![image](https://user-images.githubusercontent.com/298017/113213063-a004cd00-9245-11eb-9fe9-638219c06aab.png)
+
+
+7) Now you have a new pull request in your repository, but the changes have not yet been incorporated. For that you need to merge the pull request.
+
+
+## Merging a pull request
+
+To incorporate the changes of a pull request in your repository, you first need to review it. Do everything that you need to feel comfortable with the changes and then merge them in by approving the pull request. The process is the same, no matter in which direction the pull request is going.
+
+1) First open the pull request by clicking on the "pull requests" menue item and then on the pull request in question itself:
+   ![image](https://user-images.githubusercontent.com/298017/113213615-6da79f80-9246-11eb-9ec4-e26767792ba3.png)
+
+
+2) Now you can see the pull request comments and check the commits and file changes that are included within:
+   ![image](https://user-images.githubusercontent.com/298017/113213832-aba4c380-9246-11eb-8ac2-8ae60f77ad7f.png)
+
+
+3) When you are ready to incorporate the changes into your own repository, find the merge button but don't click it. Instead click on the small arrow next to it:
+   ![image](https://user-images.githubusercontent.com/298017/113214175-12c27800-9247-11eb-8e73-033dd612c2ec.png)
+
+
+4) This allows you to pick the merge method. Depending on the amount of changes applied to either repository you'll make youre choice here. Usually, you'll want to "squash and merge", but which one is the right way to go is dependent on the situation and beyond what we can cover here. For the purpose of this class, you can use the default "merge commit":
+   ![image](https://user-images.githubusercontent.com/298017/113214610-b9a71400-9247-11eb-81e5-061a5805a0f7.png)
+
+
+5) Selecting the merge choice above does not yet execute the merge. Instead, you still have to click the button.
+6) Afterward, provide a comment and "confirm merge":
+   ![image](https://user-images.githubusercontent.com/298017/113214953-30441180-9248-11eb-9a53-d477dacc6b9f.png)
+
+
+7) Now the changes of the upstream repository have been incorporated in your own fork. If you have a clone of the repository on your own machine, don't forget to "pull" those new changes.
+   
+7)  
