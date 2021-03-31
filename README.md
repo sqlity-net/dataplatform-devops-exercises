@@ -77,5 +77,4 @@ To incorporate the changes of a pull request in your repository, you first need 
 
 
 7) Now the changes of the upstream repository have been incorporated in your own fork. If you have a clone of the repository on your own machine, don't forget to "pull" those new changes.
-   
-7)  
+
