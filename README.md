@@ -1,1 +1,1 @@
-# dataplatform-devops-demo-01
+# dataplatform-devops-demos
