@@ -38,6 +38,7 @@ If the original repository that you forked (the "upstream" repository) changes, 
 
 4)  You are in the right place if the small merge direction arrow points from the upstream repository to your own:
     ![image](https://user-images.githubusercontent.com/298017/113211990-2fa97c00-9244-11eb-86c9-e00ee8792e89.png)
+    You can inspect the actual changes by scrolling down on this page.
 
 
 5) Transfering changes from one repository to another (related) one always requires the use od a pull request. Usually, a pull request is made to ask the maintainer of the upstream repository to incorporate changes that were made in a fork. But in this case, we are moving changes in the other direction. Yet, we are still going to use a pull request. Do that by clicking on the "Create pull request" button:
