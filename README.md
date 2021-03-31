@@ -60,7 +60,7 @@ To incorporate the changes of a pull request in your repository, you first need 
 
 
 2) Now you can see the pull request comments and check the commits and file changes that are included within:
-   ![image](https://user-images.githubusercontent.com/298017/113213832-aba4c380-9246-11eb-8ac2-8ae60f77ad7f.png)
+   ![image](https://user-images.githubusercontent.com/298017/113215274-9b8de380-9248-11eb-9b01-841fbdb7a016.png)
 
 
 3) When you are ready to incorporate the changes into your own repository, find the merge button but don't click it. Instead click on the small arrow next to it:
