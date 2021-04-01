@@ -8,8 +8,10 @@ To get started, create a copy of this repository by forking it to your own GitHu
 
 1. [Sign in](https://github.com/login) to your own GitHub account.
 1. Open the [original repository](https://github.com/sqlity-net/dataplatform-devops-demos) in your browser.
-   ![image](https://user-images.githubusercontent.com/298017/113209077-975dc800-9240-11eb-846d-536d39f50df5.png)
-   
+   | |
+   | - |
+   | ![image](https://user-images.githubusercontent.com/298017/113209077-975dc800-9240-11eb-846d-536d39f50df5.png) |
+   | |
    
 1. Click the Fork button top right:
    ![image](https://user-images.githubusercontent.com/298017/113209290-dc81fa00-9240-11eb-8aba-cca053951e99.png)
