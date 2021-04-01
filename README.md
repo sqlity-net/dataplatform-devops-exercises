@@ -23,7 +23,7 @@ To get started, create a copy of this repository by forking it to your own GitHu
 
 ## Pulling changes from the upstream repository
 
-If the original repository that you forked (the "upstream" repository) changes, you will be able to merge those changes into your own:
+If the original repository that you forked (the "upstream" repository) changes, you will be able to merge those changes into your own repository:
 
 1) Open your fork in GitHub.
 
@@ -32,8 +32,16 @@ If the original repository that you forked (the "upstream" repository) changes, 
    ![image](https://user-images.githubusercontent.com/298017/113216446-5ff41900-924a-11eb-8b70-3c0d2b2f6b4b.png)
 
 
-3) **CAREFULL!** This will lead you to the upstream repository. To get back to your own repository, click the "switching the base" link:
-   ![image](https://user-images.githubusercontent.com/298017/113211499-882c4980-9243-11eb-8a4b-70a188441122.png)
+3) **CAREFUL!** This will lead you to the upstream repository. To get back to your own repository, we need to change the merge direction:
+
+   a) Select your repository in the top dropdown:
+      ![image](https://user-images.githubusercontent.com/298017/113227264-3d6cfa80-9260-11eb-9b48-d31c51829fda.png)
+
+   b) This will remove both repository dropdowns. Click the "compare across forks" link to get them back:
+      ![image](https://user-images.githubusercontent.com/298017/113227342-7d33e200-9260-11eb-9f0e-08ce9ff6bd46.png)
+   
+   c) Finally, select the upstream repository in the bottom dropdown:
+      ![image](https://user-images.githubusercontent.com/298017/113227493-d26ff380-9260-11eb-8d87-b35d5ad42c73.png)
 
 
 4)  You are in the right place if the small merge direction arrow points from the upstream repository to your own:
@@ -41,7 +49,7 @@ If the original repository that you forked (the "upstream" repository) changes, 
     You can inspect the actual changes by scrolling down on this page.
 
 
-5) Transfering changes from one repository to another (related) one always requires the use od a pull request. Usually, a pull request is made to ask the maintainer of the upstream repository to incorporate changes that were made in a fork. But in this case, we are moving changes in the other direction. Yet, we are still going to use a pull request. Do that by clicking on the "Create pull request" button:
+5) Transfering changes from one repository to another related one always requires the use of a pull request. Usually a pull request is made to ask the maintainer of the upstream repository to incorporate changes that were made in a fork. But in this case, we are moving changes in the other direction. Yet, we are still going to use a pull request. Do that by clicking on the "Create pull request" button:
     ![image](https://user-images.githubusercontent.com/298017/113212441-c2e2b180-9244-11eb-9d5c-b75a00d4c55e.png)
 
 
@@ -56,7 +64,7 @@ If the original repository that you forked (the "upstream" repository) changes, 
 
 To incorporate the changes of a pull request in your repository, you first need to review it. Do everything that you need to feel comfortable with the changes and then merge them in by approving the pull request. The process is the same, no matter in which direction the pull request is going.
 
-1) First open the pull request by clicking on the "pull requests" menue item and then on the pull request in question itself:
+1) First open the pull request by clicking on the "pull requests" menu item and then on the pull request itself:
    ![image](https://user-images.githubusercontent.com/298017/113213615-6da79f80-9246-11eb-9ec4-e26767792ba3.png)
 
 
@@ -68,7 +76,7 @@ To incorporate the changes of a pull request in your repository, you first need 
    ![image](https://user-images.githubusercontent.com/298017/113214175-12c27800-9247-11eb-8e73-033dd612c2ec.png)
 
 
-4) This allows you to pick the merge method. Depending on the amount of changes applied to either repository you'll make youre choice here. Usually, you'll want to "squash and merge", but which one is the right way to go is dependent on the situation and beyond what we can cover here. For the purpose of this class, you can use the default "merge commit":
+4) This allows you to pick the merge method. Depending on the number of changes applied to either repository you'll make your choice here. Usually you'll want to "squash and merge", but which one is the right way to go is dependent on the situation and beyond what we can cover here. For the purpose of this class, you can use the default "merge commit":
    ![image](https://user-images.githubusercontent.com/298017/113214610-b9a71400-9247-11eb-81e5-061a5805a0f7.png)
 
 
