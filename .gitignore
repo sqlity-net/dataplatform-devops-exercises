@@ -1,3 +1,4 @@
 /DemoSolution/.vs
 **/temp/
 
+*.ssms_suo
