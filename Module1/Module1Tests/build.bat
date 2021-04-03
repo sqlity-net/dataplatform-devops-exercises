@@ -2,15 +2,15 @@
 pushd "%~dp0"
 
 echo ---------------------------------- TODO ----------------------------------
-echo 6. Nice to have, in Module1Project build.sql, how can we list the files being read with :r?
+echo * [Nice to have] In Module1Project build.sql, how can we list the files being read with :r?
 echo.
 
 echo - Installing Projects ------------------------------------------------
-call "%~dp0\..\Module1Project\build.bat"
+call "%~dp0\..\Module1Project\build.bat" "%~1" "%~2" "%~3"
 echo.
 
 echo - Installing tSQLt ------------------------------------------------
-call "%~dp0\..\tSQLt\build.bat"
+call "%~dp0\..\tSQLt\build.bat" "%~1" "%~2" "%~3"
 echo.
 
 echo - Creating list of tests ------------------------------------------------
@@ -20,7 +20,7 @@ type temp\installalltests.sql
 echo.
 
 echo - Deploying tests --------------------------------------------------------
-"%SQLCMD_HOME%\sqlcmd.exe" -i "%~dp0\build.sql" -S localhost,41433 -U sa -P Welcome1!
+"%SQLCMD_HOME%\sqlcmd.exe" -i "%~dp0\build.sql" -S "%~1" %~2 -d "%~3"
 echo.
 
 popd

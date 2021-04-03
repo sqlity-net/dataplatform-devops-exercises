@@ -6,5 +6,5 @@ GO
 :r temp\tSQLt.class.sql
 GO
 
-SELECT @@VERSION;
+SELECT @@VERSION, @@SERVERNAME, @@SERVICENAME, db_name();
 GO

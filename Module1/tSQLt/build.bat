@@ -6,6 +6,6 @@ if not exist "%~dp0\temp\" mkdir "%~dp0\temp\"
 curl https://tsqlt.org/download/tsqlt/ -o "%~dp0\temp\tSQLt.zip"
 tar -xf "%~dp0\temp\tSQLt.zip" -C "%~dp0\temp\\"
 
-"%SQLCMD_HOME%\sqlcmd.exe" -i "%~dp0\build.sql" -S localhost,41433 -U sa -P Welcome1!
+"%SQLCMD_HOME%\sqlcmd.exe" -i "%~dp0\build.sql" -S "%~1" %~2 -d "%~3"
 
 popd
