@@ -6,7 +6,7 @@ echo * [Nice to have] In Module1Project build.sql, how can we list the files bei
 echo.
 
 echo - Installing Projects ------------------------------------------------
-call "%~dp0\..\Module1Project\build.bat" "%~1" "%~2" "%~3"
+call "%~dp0\..\M1-Exercise1\build.bat" "%~1" "%~2" "%~3"
 echo.
 
 echo - Installing tSQLt ------------------------------------------------
