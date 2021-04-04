@@ -18,6 +18,6 @@
    12. Check "Use Output window"
 13. Open the Module1-Exercise1 SSMS Database Solution in SSMS
 14. Run Tools → Build
-15. In the Object Explorer, connect to your SQL Server Instance
+15. In the Object Explorer, connect to your SQL Server Instance and click on the **module1demodb** database to highlight it.
 16. Create a new query window
 17. Run "Ctrl-0" → This should result in a failing test.
