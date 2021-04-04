@@ -148,15 +148,15 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
       |![image](https://user-images.githubusercontent.com/298017/113521090-5a0d7900-9565-11eb-8cf1-2ab7a47ec29a.png)|
       ||
 1. Run Tools → Build
+   1. Find and open the "Solution Explorer" ("Ctrl+Alt+l") and click on the "M1-Exercise1-Tests" project
+      ||
+      |-|
+      |![image](https://user-images.githubusercontent.com/298017/113521405-45ca7b80-9567-11eb-9f02-d1d72f8ba0dc.png)|
+      ||
    1. xxx
       ||
       |-|
-      ||
-      ||
-   1. xxx
-      ||
-      |-|
-      ||
+      |![image](https://user-images.githubusercontent.com/298017/113521466-9c37ba00-9567-11eb-8589-98584fde83f1.png)|
       ||
    1. xxx
       ||
@@ -172,7 +172,7 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
    1. xxx
       ||
       |-|
-      ||
+      |![image](https://user-images.githubusercontent.com/298017/113521505-dc973800-9567-11eb-84ab-61e6a7fa93a2.png)|
       ||
    1. xxx
       ||
@@ -193,7 +193,7 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
    1. xxx
       ||
       |-|
-      ||
+      |![image](https://user-images.githubusercontent.com/298017/113521524-f6d11600-9567-11eb-9760-4cacc1db7893.png)|
       ||
    1. xxx
       ||
@@ -211,7 +211,7 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
       ||
       ||
 1. Run "Ctrl-0" → This should result in a failing test.
-   1. xxx
+   1. Place the cursor in the query window
       ||
       |-|
       ||
