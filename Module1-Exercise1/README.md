@@ -115,11 +115,16 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
       |-|-|
       |Title|Build|
       |Command|$(ProjectDir)\build.bat|
-      |Arguments|"<YOURSERVERNAME\INSTANCENAME>" "-E" **"module1demodb"**|
+      |Arguments|"{YOURSERVERNAME\INSTANCENAME}" "-E" **"module1demodb"**|
       |Initial directory|$(ProjectDir)|
       
-   1. Once those values are updates, first uncheck "Close on exit" and then check "Use Output window". :warning: The order in which you do this matters. :warning:
-   1. Before you click [OK], confirm that no other checkboxes are ticked.
+      :bulb: If you're using SQL Authentication, replace the "-E" in the Arguments field with "-U {USERNAME} -P {PASSWORD}" in a single pair of double-quotes. :bulb:
+      
+   1. Once those values are updates, first uncheck "Close on exit" and then check "Use Output window". 
+      
+      :warning: The order in which you do this matters. :warning:
+      
+   3. Before you click [OK], confirm that no other checkboxes are ticked.
 
 1. Open the Module1-Exercise1 SSMS Database Solution in SSMS
 1. Run Tools → Build
