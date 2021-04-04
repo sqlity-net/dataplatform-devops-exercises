@@ -156,77 +156,27 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
    1. xxx
       ||
       |-|
+      ||
+      ||
+   1. If you see something similar to the image below, this worked correctly.
+      ||
+      |-|
       |![image](https://user-images.githubusercontent.com/298017/113521466-9c37ba00-9567-11eb-8589-98584fde83f1.png)|
       ||
-   1. xxx
-      ||
-      |-|
-      ||
-      ||
-   1. xxx
-      ||
-      |-|
-      ||
-      ||
-1. In the Object Explorer, connect to your SQL Server Instance and click on the **module1demodb** database to highlight it.
-   1. xxx
+1. Run the tests.
+   1. In the Object Explorer, connect to your SQL Server Instance and click on the **module1demodb** database to highlight it.
       ||
       |-|
       |![image](https://user-images.githubusercontent.com/298017/113521505-dc973800-9567-11eb-84ab-61e6a7fa93a2.png)|
       ||
-   1. xxx
-      ||
-      |-|
-      ||
-      ||
-   1. xxx
-      ||
-      |-|
-      ||
-      ||
-   1. xxx
-      ||
-      |-|
-      ||
-      ||
-1. Create a new query window
-   1. xxx
+   1. Create a new query window by clicking on the [New Query] button or pressing "Ctrl+n".
       ||
       |-|
       |![image](https://user-images.githubusercontent.com/298017/113521524-f6d11600-9567-11eb-9760-4cacc1db7893.png)|
       ||
-   1. xxx
-      ||
-      |-|
-      ||
-      ||
-   1. xxx
-      ||
-      |-|
-      ||
-      ||
-   1. xxx
-      ||
-      |-|
-      ||
-      ||
-1. Run "Ctrl-0" → This should result in a failing test.
    1. Place the cursor in the query window
-      ||
-      |-|
-      ||
-      ||
-   1. xxx
-      ||
-      |-|
-      ||
-      ||
-   1. xxx
-      ||
-      |-|
-      ||
-      ||
-   1. xxx
+   1. Press "Ctrl-0" to run all tests in the database.
+   2. You should get the following failure message:
       ||
       |-|
       ||
