@@ -89,7 +89,7 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
       |-|-|
       |Ctrl-9 | EXEC tSQLt.RunC;--|
       |Ctrl-0 | EXEC tSQLt.RunAll;--|
-10. In SSMS create a External Tools entry for "Build"
+1. In SSMS create a External Tools entry for "Build"
    1. In SSMS open the "Tools" menu and click on "External Tools...".
       ||
       |-|
@@ -117,10 +117,12 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
       |Command|$(ProjectDir)\build.bat|
       |Arguments|"<YOURSERVERNAME\INSTANCENAME>" "-E" **"module1demodb"**|
       |Initial directory|$(ProjectDir)|
-   13. Once those values are updates, first uncheck "Close on exit" and then check "Use Output window". :warning: The order in which you do this matters. :warning:
-   14. Before you click [OK], confirm that no other checkboxes are ticked.
-13. Open the Module1-Exercise1 SSMS Database Solution in SSMS
-14. Run Tools → Build
-15. In the Object Explorer, connect to your SQL Server Instance and click on the **module1demodb** database to highlight it.
-16. Create a new query window
-17. Run "Ctrl-0" → This should result in a failing test.
+      
+   1. Once those values are updates, first uncheck "Close on exit" and then check "Use Output window". :warning: The order in which you do this matters. :warning:
+   1. Before you click [OK], confirm that no other checkboxes are ticked.
+
+1. Open the Module1-Exercise1 SSMS Database Solution in SSMS
+1. Run Tools → Build
+1. In the Object Explorer, connect to your SQL Server Instance and click on the **module1demodb** database to highlight it.
+1. Create a new query window
+1. Run "Ctrl-0" → This should result in a failing test.
