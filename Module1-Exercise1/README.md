@@ -127,22 +127,22 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
    3. Before you click [OK], confirm that no other checkboxes are ticked.
 
 1. Open the Module1-Exercise1 SSMS Database Solution in SSMS
-   1. xxx
+   1. First open SQL Server Management Studio (SSMS)
       ||
       |-|
       |![image](https://user-images.githubusercontent.com/298017/113521046-000cb380-9565-11eb-8c02-ab7c6110c1ca.png)|
       ||
-   1. xxx
+   1. In the File Menu, select "Open" → "Project/Solution..." or press "Ctrl+Shift+O"
       ||
       |-|
       |![image](https://user-images.githubusercontent.com/298017/113521053-0864ee80-9565-11eb-8c72-028ec4830575.png)|
       ||
-   1. xxx
+   1. Navigate to and open the "Module1-Exercise1" folder.
       ||
       |-|
       |![image](https://user-images.githubusercontent.com/298017/113521084-3f3b0480-9565-11eb-883a-e680b2fa0ed7.png)|
       ||
-   1. xxx
+   1. Select the file "Module1-Exercise1.ssmssln" and click [Open]
       ||
       |-|
       |![image](https://user-images.githubusercontent.com/298017/113521090-5a0d7900-9565-11eb-8cf1-2ab7a47ec29a.png)|
