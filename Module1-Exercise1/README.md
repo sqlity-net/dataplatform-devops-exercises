@@ -84,7 +84,7 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
       |-|-|
       ||![image](https://user-images.githubusercontent.com/298017/113520144-1b74c000-955f-11eb-9724-6a951ae8973d.png)|
       |||
-      |Ctrl-9 | EXEC tSQLt.RunC;--|
+      |Ctrl-9 | test "EXEC tSQLt.RunC;--"|
       |Ctrl-0 | EXEC tSQLt.RunAll;--|
 10. In SSMS create a External Tools entry for "Build"
    1. Title → Build
