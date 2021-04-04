@@ -80,10 +80,13 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
       |![image](https://user-images.githubusercontent.com/298017/113520136-1152c180-955f-11eb-93e3-5b9aadcee0b5.png)|
       ||
    1. Type in the commands shown below for "Ctrl+9" and Ctrl+0" and click [OK].
+      ||
+      |-|
+      |![image](https://user-images.githubusercontent.com/298017/113520144-1b74c000-955f-11eb-9724-6a951ae8973d.png)|
+      ||
+      
       |||
       |-|-|
-      ||![image](https://user-images.githubusercontent.com/298017/113520144-1b74c000-955f-11eb-9724-6a951ae8973d.png)|
-      |||
       |Ctrl-9 | EXEC tSQLt.RunC;--|
       |Ctrl-0 | EXEC tSQLt.RunAll;--|
 10. In SSMS create a External Tools entry for "Build"
