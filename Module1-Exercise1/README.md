@@ -90,6 +90,30 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
       |Ctrl-9 | EXEC tSQLt.RunC;--|
       |Ctrl-0 | EXEC tSQLt.RunAll;--|
 10. In SSMS create a External Tools entry for "Build"
+   1. In SSMS open the "Tools" menu and click on "".
+      ||
+      |-|
+      |![image](https://user-images.githubusercontent.com/298017/113520524-a5be2380-9561-11eb-8a7d-ddec52ba8cb6.png)|
+      ||
+   1. In SSMS open the "Tools" menu and click on "".
+      ||
+      |-|
+      |![image](https://user-images.githubusercontent.com/298017/113520527-abb40480-9561-11eb-9a52-c667c4e12b61.png)|
+      ||
+   1. In SSMS open the "Tools" menu and click on "".
+      ||
+      |-|
+      |![image](https://user-images.githubusercontent.com/298017/113520532-b79fc680-9561-11eb-858f-efb8091b684f.png)|
+      ||
+   1. In SSMS open the "Tools" menu and click on "".
+      ||
+      |-|
+      |![image](https://user-images.githubusercontent.com/298017/113520540-c4241f00-9561-11eb-9ee2-ea18067758d0.png)|
+      ||
+
+      |||
+      |-|-|
+      |
    1. Title → Build
    9. Command → $(ProjectDir)\build.bat
    10. Arguments → "<YOURSERVERNAME\INSTANCENAME>" "-E" **"module1demodb"**
