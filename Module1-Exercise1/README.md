@@ -127,7 +127,107 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
    3. Before you click [OK], confirm that no other checkboxes are ticked.
 
 1. Open the Module1-Exercise1 SSMS Database Solution in SSMS
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
 1. Run Tools → Build
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
 1. In the Object Explorer, connect to your SQL Server Instance and click on the **module1demodb** database to highlight it.
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
 1. Create a new query window
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
 1. Run "Ctrl-0" → This should result in a failing test.
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
