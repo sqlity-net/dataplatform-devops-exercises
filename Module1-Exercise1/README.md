@@ -120,7 +120,7 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
       
       :bulb: If you're using SQL Authentication, replace the "-E" in the Arguments field with "-U {USERNAME} -P {PASSWORD}" in a single pair of double-quotes. :bulb:
       
-   1. Once those values are updates, first uncheck "Close on exit" and then check "Use Output window". 
+   1. Once those values are updated, first uncheck the "Close on exit" checkbox and then check the "Use Output window" checkbox. 
       
       :warning: The order in which you do this matters. :warning:
       
@@ -130,22 +130,22 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
    1. xxx
       ||
       |-|
-      ||
-      ||
-   1. xxx
-      ||
-      |-|
-      ||
+      |![image](https://user-images.githubusercontent.com/298017/113521046-000cb380-9565-11eb-8c02-ab7c6110c1ca.png)|
       ||
    1. xxx
       ||
       |-|
-      ||
+      |![image](https://user-images.githubusercontent.com/298017/113521053-0864ee80-9565-11eb-8c72-028ec4830575.png)|
       ||
    1. xxx
       ||
       |-|
+      |![image](https://user-images.githubusercontent.com/298017/113521084-3f3b0480-9565-11eb-883a-e680b2fa0ed7.png)|
       ||
+   1. xxx
+      ||
+      |-|
+      |![image](https://user-images.githubusercontent.com/298017/113521090-5a0d7900-9565-11eb-8cf1-2ab7a47ec29a.png)|
       ||
 1. Run Tools → Build
    1. xxx
