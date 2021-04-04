@@ -25,10 +25,11 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
 
 ## Detailed Instructions
 
-1. Fork the [class GitHub repository](https://github.com/sqlity-net/dataplatform-devops-demos) to your own GitHub Account
+1. Fork the [class GitHub repository](https://github.com/sqlity-net/dataplatform-devops-demos) to your own GitHub Account.
 
    → See [clone repository](../../../) for detailed instructions.
-3. Make a new feature branch called, "my-new-feature"
+   
+3. Make a new feature branch called, "my-new-feature".
    1. ||
       |-|
       |![image](https://user-images.githubusercontent.com/298017/113496546-b078aa00-94c8-11eb-9ad3-12816a281199.png)|
@@ -41,7 +42,8 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
       |-|
       |![image](https://user-images.githubusercontent.com/298017/113496576-f3d31880-94c8-11eb-95bb-dab2ac2767aa.png)|
       ||
-5. Clone the remote repository to your local machine
+      
+5. Clone the remote repository to your local machine.
 
    **Follow these instructions if you use Tortoise Git. For other tools consult their manual.**
    1. Copy the repository URL (If you use SSH authentication, you need to copy the SSH URL instead)
@@ -49,12 +51,13 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
       |-|
       |![image](https://user-images.githubusercontent.com/298017/113496696-3ea16000-94ca-11eb-875c-d92611999733.png)|
       ||
-   1. Create a new folder on your machine. Right click it and select  Tortoise Git clone.
-   2. in the dialog, paste the URL you copied from GitHub and click [OK].
+   1. Create a new folder on your machine. Right click it and select → Tortoise Git → Clone.
+   2. In the dialog, paste the URL you copied from GitHub and click [OK].
       ||
       |-|
       |![image](https://user-images.githubusercontent.com/298017/113496743-9770f880-94ca-11eb-9ef9-b608f12f3ebd.png)|
       ||
+      
 7. On your local machine, switch to my-new-feature
 8. Open SSMS and create the tSQLt Query shortcuts
    1. Ctrl-9 → EXEC tSQLt.RunC;--
