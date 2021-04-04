@@ -68,9 +68,24 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
       |![image](https://user-images.githubusercontent.com/298017/113519800-94bee380-955c-11eb-8d19-0756dfeb75f7.png)|
       ||
    1. Click [OK]
-9. Open SSMS and create the tSQLt Query shortcuts
-   1. Ctrl-9 → EXEC tSQLt.RunC;--
-   5. Ctrl-0 → EXEC tSQLt.RunAll;--
+9. Open SSMS and create the tSQLt Query shortcuts.
+   1. In SSMS open the "Tools" menu and click on "Options...".
+      ||
+      |-|
+      |![image](https://user-images.githubusercontent.com/298017/113520095-cb95f900-955e-11eb-8277-5bb79130a203.png)|
+      ||
+   1. Go to "Environment" → "Keyboard" → "Query Shortcuts".
+      ||
+      |-|
+      |![image](https://user-images.githubusercontent.com/298017/113520136-1152c180-955f-11eb-93e3-5b9aadcee0b5.png)|
+      ||
+   1. Type in the commands shown below for "Ctrl+9" and Ctrl+0" and click [OK].
+      ||
+      |-|
+      |![image](https://user-images.githubusercontent.com/298017/113520144-1b74c000-955f-11eb-9724-6a951ae8973d.png)|
+      ||
+      |Ctrl-9 → EXEC tSQLt.RunC;--|
+      |Ctrl-0 → EXEC tSQLt.RunAll;--|
 10. In SSMS create a External Tools entry for "Build"
    1. Title → Build
    9. Command → $(ProjectDir)\build.bat
