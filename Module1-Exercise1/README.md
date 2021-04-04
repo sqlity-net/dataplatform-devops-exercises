@@ -27,7 +27,7 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
 
 1. Fork the [class GitHub repository](https://github.com/sqlity-net/dataplatform-devops-demos) to your own GitHub Account
 
-   → See [clone repository](/..) for detailed instructions.
+   → See [clone repository](../../../) for detailed instructions.
 3. Make a new feature branch called, "my-new-feature"
    1. ||
       |-|
