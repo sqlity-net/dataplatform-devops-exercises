@@ -47,13 +47,13 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
    1. Copy the repository URL. (If you use SSH authentication, you need to copy the SSH URL instead.)
       ||
       |-|
-      |![image](https://user-images.githubusercontent.com/298017/113496696-3ea16000-94ca-11eb-875c-d92611999733.png)|
+      |![image](https://user-images.githubusercontent.com/298017/113521157-9e991480-9565-11eb-9f68-732a628183cb.png)|
       ||
    1. Locate or create the folder where you plan to organize your repositories from GitHub, e.g. LocalData\repos. Right click on the folder name in File Explorer and select from the context menu "Git Clone...".
    2. In the dialog, paste the URL you copied from GitHub and click [OK].
       ||
       |-|
-      |![image](https://user-images.githubusercontent.com/298017/113496743-9770f880-94ca-11eb-9ef9-b608f12f3ebd.png)|
+      |![image](https://user-images.githubusercontent.com/298017/113521237-2a12a580-9566-11eb-9e8f-be9226ff373c.png)|
       ||
       
 7. On your local machine, switch to the "my-new-feature" branch
@@ -65,7 +65,7 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
    1. Select the "my-new-feature" branch in the dropdown
       ||
       |-|
-      |![image](https://user-images.githubusercontent.com/298017/113519800-94bee380-955c-11eb-8d19-0756dfeb75f7.png)|
+      |![image](https://user-images.githubusercontent.com/298017/113521214-03ed0580-9566-11eb-84f9-61454bb446b6.png)|
       ||
    1. Click [OK]
 9. Open SSMS and create the tSQLt Query shortcuts.
