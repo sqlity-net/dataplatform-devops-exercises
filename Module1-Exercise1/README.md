@@ -42,7 +42,8 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
       |![image](https://user-images.githubusercontent.com/298017/113496576-f3d31880-94c8-11eb-95bb-dab2ac2767aa.png)|
       ||
 5. Clone the remote repository to your local machine
-   1. follow these instructions if you use Tortoise Git. For other tools consult their manual.
+
+   **Follow these instructions if you use Tortoise Git. For other tools consult their manual.**
    1. Copy the repository URL (If you use SSH authentication, you need to copy the SSH URL instead)
       ||
       |-|
