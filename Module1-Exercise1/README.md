@@ -21,7 +21,7 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
       
 1. Clone the remote repository to your local machine.
 
-   :warning:→ **Follow these instructions if you use Tortoise Git (:turtle:). For other tools consult their manual.** ←:warning:
+   :warning:→ **Follow these instructions if you use Tortoise Git (:turtle:). For other tools consult their manual.**
    1. Copy the repository URL. (If you use SSH authentication, you need to copy the SSH URL instead.)
       ||
       |-|
@@ -100,7 +100,7 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
       
    1. Once those values are updated, first uncheck the "Close on exit" checkbox and then check the "Use Output window" checkbox. 
       
-      :warning: The order in which you do this matters. :warning:
+      :warning: The order in which you do this matters.
       
    1. Before you click [OK], confirm that no other checkboxes are ticked.
 
@@ -142,16 +142,16 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
       |![image](https://user-images.githubusercontent.com/298017/113521466-9c37ba00-9567-11eb-8589-98584fde83f1.png)|
       ||
       
-      :warning: If you instead see several error messages as shown here, you need to prep the server. :warning:
+      :warning: If you instead see several error messages as shown here, you need to prep the server.
       
-      :warning: Please continue to the next step ("Prepare your SQL Server instance for tSQLt") for instructions :warning:
+      :warning: Please continue to the next step ("Prepare your SQL Server instance for tSQLt") for instructions.
       ||
       |-|
       |![image](https://user-images.githubusercontent.com/298017/113527947-23e3ef80-958d-11eb-8952-16772de07850.png)|
       ||
 1. Prepare your SQL Server instance for tSQLt.
 
-   :warning: This step is required only if the prior step failed. You need to run it once per SQL Server instance. :warning:
+   :warning: This step is required only if the prior step failed. You need to run it once per SQL Server instance.
    
    To prepare the server, the PrepareServer.sql script has to be executed. It is included in the tSQLt download. This is easily done with a small change to the build.sql file in the tSQLt project.
    1. In Solution Explorer ("Ctrl+Alt+L"), navigate to the "build.sql" file under "Queries" in the "tSQLt" project and double-click to open it.
@@ -179,7 +179,7 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
       |-|
       |![image](https://user-images.githubusercontent.com/298017/113521466-9c37ba00-9567-11eb-8589-98584fde83f1.png)|
       ||
-   1. :warning: To prevent this script from unnecessary execution, remove the two dashes ("--") you added to the build.sql file **and save** it. :warning:
+   1. :warning: To prevent this script from unnecessary execution, remove the two dashes ("--") you added to the build.sql file **and save** it.
    
 1. Run the tests.
    1. In the Object Explorer, connect to your SQL Server Instance and click on the **module1demodb** database to highlight it.
