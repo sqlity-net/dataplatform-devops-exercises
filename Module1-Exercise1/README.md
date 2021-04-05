@@ -1,29 +1,7 @@
 # Module 1 - Exercise 1
 The goal of this exercise is to familiarize yourself with SSMS database projects, install tSQLt, and set up your SSMS shortcuts to more easily build and test your code.
 
-## Summary of Steps
-
-1. Fork the [class GitHub repository](https://github.com/sqlity-net/dataplatform-devops-demos) to your own GitHub Account
-2. Make a new feature branch called, "my-new-feature"
-3. Clone the remote repository to your local machine
-4. On your local machine, switch to my-new-feature
-5. Open SSMS and create the tSQLt Query shortcuts
-   1. Ctrl-9 → EXEC tSQLt.RunC;--
-   5. Ctrl-0 → EXEC tSQLt.RunAll;--
-7. In SSMS create a External Tools entry for "Build"
-   1. Title → Build
-   9. Command → $(ProjectDir)\build.bat
-   10. Arguments → "<YOURSERVERNAME\INSTANCENAME>" "-E" **"module1demodb"**
-   11. Initial directory → $(ProjectDir)
-   13. Uncheck "Close on exit"
-   12. Check "Use Output window"
-13. Open the Module1-Exercise1 SSMS Database Solution in SSMS
-14. Run Tools → Build
-15. In the Object Explorer, connect to your SQL Server Instance and click on the **module1demodb** database to highlight it.
-16. Create a new query window
-17. Run "Ctrl-0" → This should result in a failing test.
-
-## Detailed Instructions
+## Instructions
 
 1. Fork the [class GitHub repository](https://github.com/sqlity-net/dataplatform-devops-demos) to your own GitHub Account.
 
@@ -158,13 +136,15 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
       |-|
       |![image](https://user-images.githubusercontent.com/298017/113527639-2b56c900-958c-11eb-8586-94cf8a334d04.png)|
       ||
-   1. If you see the message "Thank you for using tSQLt" you can contine with "Run the tests". You might have to scroll up a little to see the message.
+   1. If you see the message "Thank you for using tSQLt" you can contine with "Run the tests" step. You might have to scroll up a little to see the message.
       ||
       |-|
       |![image](https://user-images.githubusercontent.com/298017/113521466-9c37ba00-9567-11eb-8589-98584fde83f1.png)|
       ||
       
       :warning: If you instead see several error messages as shown here, you need to prep the server. :warning:
+      
+      :warning: Please continue to the next step ("Prepare your SQL Server instance for tSQLt") for instructions :warning:
       ||
       |-|
       |![image](https://user-images.githubusercontent.com/298017/113527947-23e3ef80-958d-11eb-8952-16772de07850.png)|
@@ -184,11 +164,6 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
       |-|
       |![image](https://user-images.githubusercontent.com/298017/113529093-88ed1480-9590-11eb-9f0f-a807e15b7474.png)|
       ||
-   1. Add two dashes ("--") at the beginning of the first line **and save** the file. This will cause the next two lines to be executed next time the build runs.
-      ||
-      |-|
-      |![image](https://user-images.githubusercontent.com/298017/113529093-88ed1480-9590-11eb-9f0f-a807e15b7474.png)|
-      ||
    1. In "Solution Explorer" ("Ctrl+Alt+L"), click on the "M1-Exercise1-Tests" project.
       ||
       |-|
@@ -199,18 +174,20 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
       |-|
       |![image](https://user-images.githubusercontent.com/298017/113527639-2b56c900-958c-11eb-8586-94cf8a334d04.png)|
       ||
-   1. Now you will see the "Thank you for using tSQLt" message. (Though, you might have to scroll up.)
+   1. You will see the "Thank you for using tSQLt" message. (Though, you might have to scroll up.)
       ||
       |-|
       |![image](https://user-images.githubusercontent.com/298017/113521466-9c37ba00-9567-11eb-8589-98584fde83f1.png)|
       ||
+   1. :warning: To prevent this script from unnecessary exectuion, remove the two dashes ("--") you just added to the build.sql file **and save** it. :warning:
+   
 1. Run the tests.
    1. In the Object Explorer, connect to your SQL Server Instance and click on the **module1demodb** database to highlight it.
       ||
       |-|
       |![image](https://user-images.githubusercontent.com/298017/113521505-dc973800-9567-11eb-84ab-61e6a7fa93a2.png)|
       ||
-   1. Create a new query window by clicking on the [New Query] button or pressing "Ctrl+N".
+   1. Create a new query window by clicking on the [New Query] button or by pressing "Ctrl+N".
       ||
       |-|
       |![image](https://user-images.githubusercontent.com/298017/113521524-f6d11600-9567-11eb-9760-4cacc1db7893.png)|
@@ -220,5 +197,6 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
    2. You should get the following failure message:
       ||
       |-|
+      |![image](https://user-images.githubusercontent.com/298017/113529786-6825be80-9592-11eb-9027-360e7f2c1157.png)|
       ||
-      ||
+1. :sparkles: You did it! :sparkles: You have successfully set up an SSMS database project, installed tSQLt, set up your SSMS shortcuts, and **executed a test**. 
