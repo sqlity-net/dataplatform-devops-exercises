@@ -7,7 +7,7 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
 
    → See [clone repository](../../../) for detailed instructions.
    
-3. Make a new feature branch called, "my-new-feature".
+1. Make a new feature branch called, "my-new-feature".
    1. Select the branch dropdown (it says, "main") and enter "my-new-feature" as the name of the new branch.
       ||
       |-|
@@ -19,7 +19,7 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
       |![image](https://user-images.githubusercontent.com/298017/113496576-f3d31880-94c8-11eb-95bb-dab2ac2767aa.png)|
       ||
       
-5. Clone the remote repository to your local machine.
+1. Clone the remote repository to your local machine.
 
    :warning:→ **Follow these instructions if you use Tortoise Git (:turtle:). For other tools consult their manual.** ←:warning:
    1. Copy the repository URL. (If you use SSH authentication, you need to copy the SSH URL instead.)
@@ -28,13 +28,13 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
       |![image](https://user-images.githubusercontent.com/298017/113521157-9e991480-9565-11eb-9f68-732a628183cb.png)|
       ||
    1. Locate or create the folder where you plan to organize your repositories from GitHub, e.g. LocalData\repos. Right click on the folder name in File Explorer and select from the context menu "Git Clone...".
-   2. In the dialog, paste the URL you copied from GitHub and click [OK].
+   1. In the dialog, paste the URL you copied from GitHub and click [OK].
       ||
       |-|
       |![image](https://user-images.githubusercontent.com/298017/113521237-2a12a580-9566-11eb-9e8f-be9226ff373c.png)|
       ||
       
-7. On your local machine, switch to the "my-new-feature" branch
+1. On your local machine, switch to the "my-new-feature" branch
    1. Find the repository folder, right-click for the context menu, and select Tortoise Git → "Switch/Checkout" 
       ||
       |-|
@@ -46,7 +46,7 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
       |![image](https://user-images.githubusercontent.com/298017/113521214-03ed0580-9566-11eb-84f9-61454bb446b6.png)|
       ||
    1. Click [OK]
-9. Open SSMS and create the tSQLt Query shortcuts.
+1. Open SSMS and create the tSQLt Query shortcuts.
    1. In SSMS open the "Tools" menu and click on "Options...".
       ||
       |-|
@@ -102,7 +102,7 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
       
       :warning: The order in which you do this matters. :warning:
       
-   3. Before you click [OK], confirm that no other checkboxes are ticked.
+   1. Before you click [OK], confirm that no other checkboxes are ticked.
 
 1. Open the Module1-Exercise1 SSMS Database Solution in SSMS
    1. First open SQL Server Management Studio (SSMS)
@@ -179,7 +179,7 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
       |-|
       |![image](https://user-images.githubusercontent.com/298017/113521466-9c37ba00-9567-11eb-8589-98584fde83f1.png)|
       ||
-   1. :warning: To prevent this script from unnecessary exectuion, remove the two dashes ("--") you just added to the build.sql file **and save** it. :warning:
+   1. :warning: To prevent this script from unnecessary execution, remove the two dashes ("--") you added to the build.sql file **and save** it. :warning:
    
 1. Run the tests.
    1. In the Object Explorer, connect to your SQL Server Instance and click on the **module1demodb** database to highlight it.
@@ -194,7 +194,7 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
       ||
    1. Place the cursor in the query window
    1. Press "Ctrl-0" to run all tests in the database.
-   2. You should get the following failure message:
+   1. You should get the following failure message:
       ||
       |-|
       |![image](https://user-images.githubusercontent.com/298017/113529786-6825be80-9592-11eb-9027-360e7f2c1157.png)|
