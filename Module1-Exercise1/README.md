@@ -148,20 +148,41 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
       |![image](https://user-images.githubusercontent.com/298017/113521090-5a0d7900-9565-11eb-8cf1-2ab7a47ec29a.png)|
       ||
 1. Run Tools → Build
-   1. Find and open the "Solution Explorer" ("Ctrl+Alt+l") and click on the "M1-Exercise1-Tests" project
+   1. Find and open the "Solution Explorer" ("Ctrl+Alt+L") and click on the "M1-Exercise1-Tests" project
       ||
       |-|
       |![image](https://user-images.githubusercontent.com/298017/113521405-45ca7b80-9567-11eb-9f02-d1d72f8ba0dc.png)|
       ||
-   1. xxx
+   1. Go to the "Tools" menu and click on the "Build" menu item you created earlier.
       ||
       |-|
+      |![image](https://user-images.githubusercontent.com/298017/113527639-2b56c900-958c-11eb-8586-94cf8a334d04.png)|
       ||
-      ||
-   1. If you see something similar to the image below, this worked correctly.
+   1. If you see the message "Thank you for using tSQLt" you can contine with "Run the tests". You might have to scroll up a little to see the message.
       ||
       |-|
       |![image](https://user-images.githubusercontent.com/298017/113521466-9c37ba00-9567-11eb-8589-98584fde83f1.png)|
+      ||
+      
+      :warning: If you instead see several error messages as shown here, you need to prep the server. :warning:
+      ||
+      |-|
+      |![image](https://user-images.githubusercontent.com/298017/113527947-23e3ef80-958d-11eb-8952-16772de07850.png)|
+      ||
+1. Prepare your SQL Server instance for tSQLt.
+
+   :warning: This step is required only if the prior step failed. You need to run it once per SQL Server instance. :warning:
+   
+   To prepare the server, the PrepareServer.sql script has to be executed. It is included in the tSQLt download. This is easily done with a small change to the build.sql file in the tSQLt project.
+   1. In Solution Explorer navigate to the "build.sql" file under "Queries" in the "tSQLt" project and double-click to open it.
+      ||
+      |-|
+      |![image](https://user-images.githubusercontent.com/298017/113528687-4ecf4300-958f-11eb-834b-cc8dd72b4517.png)|
+      ||
+   1. Edit
+      ||
+      |-|
+      |![image](https://user-images.githubusercontent.com/298017/113528687-4ecf4300-958f-11eb-834b-cc8dd72b4517.png)|
       ||
 1. Run the tests.
    1. In the Object Explorer, connect to your SQL Server Instance and click on the **module1demodb** database to highlight it.
@@ -169,7 +190,7 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
       |-|
       |![image](https://user-images.githubusercontent.com/298017/113521505-dc973800-9567-11eb-84ab-61e6a7fa93a2.png)|
       ||
-   1. Create a new query window by clicking on the [New Query] button or pressing "Ctrl+n".
+   1. Create a new query window by clicking on the [New Query] button or pressing "Ctrl+N".
       ||
       |-|
       |![image](https://user-images.githubusercontent.com/298017/113521524-f6d11600-9567-11eb-9760-4cacc1db7893.png)|
