@@ -96,7 +96,7 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
       |Arguments|"{YOURSERVERNAME\INSTANCENAME}" "-E" **"module1demodb"**|
       |Initial directory|$(ProjectDir)|
       
-      :bulb: If you're using SQL Authentication, replace the "-E" in the Arguments field with "-U {USERNAME} -P {PASSWORD}" in a single pair of double-quotes. :bulb:
+      :bulb: If you're using SQL Authentication, replace the "-E" in the Arguments field with "-U {USERNAME} -P {PASSWORD}" in a single pair of double-quotes.
       
    1. Once those values are updated, first uncheck the "Close on exit" checkbox and then check the "Use Output window" checkbox. 
       
@@ -199,4 +199,6 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
       |-|
       |![image](https://user-images.githubusercontent.com/298017/113529786-6825be80-9592-11eb-9027-360e7f2c1157.png)|
       ||
-1. :sparkles: You did it! :sparkles: You have successfully set up an SSMS database project, installed tSQLt, set up your SSMS shortcuts, and **executed a test**. 
+1. :sparkles: You did it! :sparkles:
+
+   You have successfully set up an SSMS database project, installed tSQLt, set up your SSMS shortcuts, and **executed a test**. 
