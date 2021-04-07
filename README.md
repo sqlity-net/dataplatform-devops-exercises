@@ -146,7 +146,12 @@ Follow the steps below to set up the SQLCMD_HOME Windows environment variable.
    ```
    cd c:\
    ```
-3. In the new command prompt enter `dir /s sqlcmd.exe` to find an installation of the sqlcmd.exe utility
-4. Once you have identified the location of sqlcmd.exe, create a new environment variable called, "SQLCMD_HOME".
-   `SETX SQLCMD_HOME "<YOURPATHGOESHERE>"`
+1. Use the following command to find an installation of the sqlcmd.exe utility
+   ```
+   dir /s sqlcmd.exe
+   ```
+1. Once you have identified the location of sqlcmd.exe, create a new environment variable called, "SQLCMD_HOME". If you get multiple results back, use the one that has the highest version number.
+   ```
+   SETX SQLCMD_HOME "<YOURPATHGOESHERE>"
+   ```
 
