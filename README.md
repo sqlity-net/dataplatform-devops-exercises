@@ -1,6 +1,6 @@
-# Demo and Exercise Repository for Database DevOps
+# Exercise Repository for Database DevOps Training
 
-This is the repository for all class related demos and exercises.
+This is the repository for all class related exercises.
 
 ## Forking this repository
 
@@ -134,4 +134,15 @@ To incorporate the changes of a pull request in your repository, you first need 
 
 
 1. Now the changes of the upstream repository have been incorporated in your own fork. If you have a clone of the repository on your own machine, don't forget to "pull" those new changes.
+
+## Setting the %SQLCMD_HOME% Windows environment variable
+
+:warning: In order to successfully run the exercises in this repository, you must have sqlcmd installed locally.
+
+Follow the steps below to set up the SQLCMD_HOME Windows environment variable.
+
+1. Open up a command prompt in Windows by typing `cmd` in the Start Menu
+1. In the new command prompt enter `dir /s sqlcmd.exe` to find an installation of the sqlcmd.exe utility
+1. Once you have identified the location of sqlcmd.exe, create a new environment variable called, "SQLCMD_HOME".
+   `SETX SQLCMD_HOME "<YOURPATHGOESHERE>"`
 
