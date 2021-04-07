@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # SQL Server Management Studio Solution File, Format Version 18.00
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "M1-Exercise1", "M1-Exercise1\M1-Exercise1.ssmssqlproj", "{28FE27C0-4B02-4B70-A0DF-BA2BD80DFFAA}"
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "M2-Exercise1", "M2-Exercise1\M2-Exercise1.ssmssqlproj", "{28FE27C0-4B02-4B70-A0DF-BA2BD80DFFAA}"
 EndProject
-Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "M1-Exercise1-Tests", "M1-Exercise1-Tests\M1-Exercise1-Tests.ssmssqlproj", "{51ED3B3C-32DC-4C82-9125-E6D36599F723}"
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "M2-Exercise1-Tests", "M2-Exercise1-Tests\M2-Exercise1-Tests.ssmssqlproj", "{51ED3B3C-32DC-4C82-9125-E6D36599F723}"
 EndProject
 Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "tSQLt", "tSQLt\tSQLt.ssmssqlproj", "{543084B7-0CCD-4CCF-ABFF-755F323AA515}"
 EndProject
