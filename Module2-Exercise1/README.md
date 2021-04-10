@@ -1,7 +1,7 @@
 # Module 2 - Exercises
 The goal of these exercises is to write your first test and try out Test Driven Design.
 
-## Instructions for Exercises
+## Instructions for Exercise 1
 
 The Lost & Found department needs to calculate shipping costs for forgotten items.
 They are working on a table driven solution but need something working right now.
@@ -33,3 +33,20 @@ There are at several ways to run your unit tests:
 Note: You have successfully completed this exercise once you have 
 1. Written enough tests
 1. All your tests pass when using the "Build" method above
+
+## Instructions for Exercise 2
+
+The Lost & Found department needs to *also* calculate handling costs for forgotten items.
+They are still working on a table driven solution but need something working right now.
+
+For now:  If the customer has more than 10000 rewards points, handling is free. If they have less, handling is $37.
+
+Write the LostAndFound.CalculateHandling(@RewardsBalance) function:
+
+1. Use the same project that you used for Exercise 1. 
+1. Add the appropriate files for tests and code, as needed.
+1. Find a partner, use TDD, and ping-pong style pair programming.
+   1. The first person will write a failing unit test based on the business requirements, and pass keyboard control to their partner.
+   1. The second person in the pair will write just enough code to make that first unit test pass, and then write a new failing unit test.
+   1. The first person will now write just enough code to fix it.
+   1. Rinse & Repeat.
