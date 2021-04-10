@@ -23,11 +23,11 @@ Write the LostAndFound.CalculateShipping(@HotelState,@ShippingState) function:
 Write the required code and enough tests
 
 There are at several ways to run your unit tests:
-1. With the cursor in a query window, press Ctrl+0. This will execute all tests in the database.
-1. Highlight the name of the test class and press Ctrl+9. This will execute all tests in that test class. You can also highlight the full name including schema of a single test to just execute that one test.
+1. **Run All**: With the cursor in a query window, press Ctrl+0. This will execute all tests in the database.
+1. **Run Selection**: Highlight the name of the test class and press Ctrl+9. This will execute all tests in that test class. You can also highlight the full name including schema of a single test to just execute that one test.
 1. :warning: Make sure you have everything saved before trying this method. 
 
-   Select the Module2-Exercise1-Tests project and run Tools --> Build. This will drop the database and recreate everything from scratch.
+   **Build**: Select the Module2-Exercise1-Tests project and run Tools --> Build. This will drop the database and recreate everything from scratch.
 
 
 Note: You have successfully completed this exercise once you have 
