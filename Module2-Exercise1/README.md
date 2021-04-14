@@ -18,7 +18,7 @@ Write the LostAndFound.CalculateShipping(@HotelState,@ShippingState) function:
    1. tSQLt
 1. First create (or recreate) the database by following these steps:
    1. Click on the Module2-Exercise1-Tests project to highlight it.
-   1. Run Tools --> Build. This will also install and execute a shell test we already added to the project.
+   1. Run Tools --> Build. This will drop and recreate the database and install and execute a shell test.
    1. If you would like to also install the demo code in the database, click on Module2-PresentationDemo1 instead in step i) above.
 3. Create a file to create the LostAndFound schema in the Module2-Exercise1 project called, LostAndFound.schema.sql
 4. Create a file for the function in the Module2-Exercise1 project called, LostAndFound.CalculateShipping.sfn.sql
