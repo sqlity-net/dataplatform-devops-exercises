@@ -18,7 +18,7 @@ Write the LostAndFound.CalculateShipping(@HotelState,@ShippingState) function:
    1. tSQLt
 1. First create (or recreate) the database by following these steps:
    1. Click on the Module2-Exercise1-Tests project to highlight it.
-   1. Run Tools --> Build. This will also install and execute a shell test we already added to the project.
+   1. Run Tools --> Build. This will drop and recreate the database and install and execute a shell test.
    1. If you would like to also install the demo code in the database, click on Module2-PresentationDemo1 instead in step i) above.
 3. Create a file to create the LostAndFound schema in the Module2-Exercise1 project called, LostAndFound.schema.sql
 4. Create a file for the function in the Module2-Exercise1 project called, LostAndFound.CalculateShipping.sfn.sql
@@ -32,7 +32,7 @@ There are at several ways to run your unit tests:
 1. **Run Selection**: Highlight the name of the test class and press Ctrl+9. This will execute all tests in that test class. You can also highlight the full name including schema of a single test to just execute that one test.
 1. **Build**: Select the Module2-Exercise1-Tests project and run Tools --> Build. This will drop the database and recreate everything from scratch. :warning: Make sure you have everything saved before trying this method.
 
-Note: You have successfully completed this exercise once you have 
+Note: You have successfully completed this exercise once you have: 
 1. Written enough tests
 1. All your tests pass when using the "Build" method above
 
@@ -52,3 +52,9 @@ Write the LostAndFound.CalculateHandling(@RewardsBalance) function:
    1. The second person in the pair will write just enough code to make that first unit test pass, and then write a new failing unit test.
    1. The first person will now write just enough code to fix it.
    1. Rinse & Repeat.
+
+   Remember, you want to see each test first fail (for the right reason) and then pass. So, run the tests after each of these steps.
+
+Like in Exercise 1, you have successfully completed this exercise once you have: 
+1. Written enough tests
+1. All your tests pass when using the "Build" method above
