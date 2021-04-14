@@ -1,0 +1,8 @@
+DROP FUNCTION IF EXISTS Checkout.GetDiscount;
+GO
+CREATE FUNCTION Checkout.GetDiscount(@Coupon VARCHAR(100))
+RETURNS TABLE
+AS
+RETURN
+  SELECT CASE WHEN @Coupon <> '15OFF' THEN 0 ELSE 15.0 END percent_discount;
+GO
