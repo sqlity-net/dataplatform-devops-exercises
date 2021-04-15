@@ -9,15 +9,18 @@ Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "M2-Exercise1-Tests", "M2-Ex
 EndProject
 Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "tSQLt", "tSQLt\tSQLt.ssmssqlproj", "{543084B7-0CCD-4CCF-ABFF-755F323AA515}"
 EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "M2-PresentationDemo1", "M2-PresentationDemo1\M2-PresentationDemo1.ssmssqlproj", "{7207ADDC-2E01-4D93-9921-8ADA4F559ADC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Default|Default = Default|Default
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{28FE27C0-4B02-4B70-A0DF-BA2BD80DFFAA}.Default|Default.ActiveCfg = Default
-		{8FF9A801-82B5-491E-9523-CA2B7B344306}.Default|Default.ActiveCfg = Default
 		{51ED3B3C-32DC-4C82-9125-E6D36599F723}.Default|Default.ActiveCfg = Default
 		{543084B7-0CCD-4CCF-ABFF-755F323AA515}.Default|Default.ActiveCfg = Default
+		{0E8313B7-95A4-434C-8AF1-231D88D1128D}.Default|Default.ActiveCfg = Default
+		{7207ADDC-2E01-4D93-9921-8ADA4F559ADC}.Default|Default.ActiveCfg = Default
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
