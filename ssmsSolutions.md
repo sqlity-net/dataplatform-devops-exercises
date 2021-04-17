@@ -88,58 +88,16 @@ Projects provide a way to organize the files in a solution into groups, and are 
 
 ## Directory structure of the solution and related files
 
-   ||
+SSMS creates a directory for each project in the solution and adds a .ssmssqlproj file in it. There is also a .ssmssln file that contains the main information of the solution. Other files in those directories might be part of the solution (of a project in the solution, to be exact). However, files are not automatically added, so you might see files that are not part of the solution at all (for example ~\Documents\repos\SolutionName\PreexistingSQLFile.sql in the image below).
+
+   |SSMS Solution Folder Structure|
    |-|
+   |![image](https://user-images.githubusercontent.com/298017/115125803-92b34680-9f98-11eb-80b5-96fa54b2f585.png)|
    ||
-   ||
-
-   ||
-   |-|
-   ||
-   ||
-
-   ||
-   |-|
-   ||
-   ||
-
-   ||
-   |-|
-   ||
-   ||
-
-   ||
-   |-|
-   ||
-   ||
-
-   ||
-   |-|
-   ||
-   ||
-
-   ||
-   |-|
-   ||
-   ||
-
-
-
-
-## File types for the three file areas in a project (connections, sql files, other files)
-
-
-
-
-
-
-
-
-
 
 ## Best practices (how is this different than "we recommend"??)
 We recommend the following for your database projects:
 
 - Create one project for your database application code and another project for the tests. However you can create as many (in more complex scenarios) projects as you like for each of the two areas, code and tests.
 
-
+- Delete your connection information before checking in if you are workin in a team. This is not a security issue, but makes working on different instances easier.
