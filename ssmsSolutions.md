@@ -1,6 +1,6 @@
 # SSMS Solutions and Projects Explained!
 
-Just like Visual Studio, SSMS has solutions and projects. They organize the files that are important to your database application.
+Just like Visual Studio, SSMS has solutions and projects. Solutions and projects organize the files that are important to your database application.
 
 The biggest difference between working directly with database objects and working with SSMS solutions is that solutions are based on files in your filesystem, not on objects in your database.
 
@@ -12,7 +12,7 @@ Projects provide a way to organize the files in a solution into groups, and are 
    |-|
    |![image](https://user-images.githubusercontent.com/298017/115097644-701e2080-9ef9-11eb-9d8b-4cb54045153a.png)|
    ||
-1. Follow these steps
+1. Follow these steps in the correct order
    1. Tick the checkbox, "Create directory for solution"
    1. Enter the "Solution name:"
    1. Enter the "Project name:"
@@ -45,7 +45,7 @@ Projects provide a way to organize the files in a solution into groups, and are 
    |![image](https://user-images.githubusercontent.com/298017/115097791-3863a880-9efa-11eb-9588-a1dd1a6f613b.png)|
    ||
    
-   Note: You can use this same technique to add non-SQL files. Just change the file name extension.
+   Note: You can use this same technique to add non-SQL files. Just use the appropriate extension in the file name.
 1. New SQL files will always be listed under the "Queries" branch in the project tree view. Non-SQL files can be found under "Miscellaneous"
    |MyQuery.sql|
    |-|
@@ -75,61 +75,63 @@ Projects provide a way to organize the files in a solution into groups, and are 
    |-|
    |![image](https://user-images.githubusercontent.com/298017/115097888-c2ac0c80-9efa-11eb-9ba5-21b0c6f5f67b.png)|
    ||
-1. In the "Add Existing Item" dialog, select the file you want to add to the project
+1. In the "Add Existing Item" dialog, select the file you want to add to the project and click "Add"
    |Selecting a File - Anywhere|
    |-|
    |![image](https://user-images.githubusercontent.com/298017/115097915-f7b85f00-9efa-11eb-93ad-8adec116dd26.png)|
    ||
-1. Note: If the file you selected is not in the project directory, SSMS will make a copy and place it there.
+1. Note: If the file you selected is not in the project directory, SSMS will create a copy for you in the project directory.
    |Copied and Added File|
    |-|
    |![image](https://user-images.githubusercontent.com/298017/115097946-2cc4b180-9efb-11eb-9782-50166ad27b4c.png)|
    ||
 
-   ||
-   |-|
-   ||
-   ||
-
-   ||
-   |-|
-   ||
-   ||
-
-   ||
-   |-|
-   ||
-   ||
-
-   ||
-   |-|
-   ||
-   ||
-
-   ||
-   |-|
-   ||
-   ||
-
-   ||
-   |-|
-   ||
-   ||
-
-   ||
-   |-|
-   ||
-   ||
-
-
-
-
-### File types for the three file areas in a project (connections, sql files, other files)
-
-
-
-
 ## Directory structure of the solution and related files
+
+   ||
+   |-|
+   ||
+   ||
+
+   ||
+   |-|
+   ||
+   ||
+
+   ||
+   |-|
+   ||
+   ||
+
+   ||
+   |-|
+   ||
+   ||
+
+   ||
+   |-|
+   ||
+   ||
+
+   ||
+   |-|
+   ||
+   ||
+
+   ||
+   |-|
+   ||
+   ||
+
+
+
+
+## File types for the three file areas in a project (connections, sql files, other files)
+
+
+
+
+
 
 
 
