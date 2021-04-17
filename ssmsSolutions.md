@@ -8,32 +8,32 @@ Projects provide a way to organize the files in a solution into groups, and are 
 
 ## How to create a solution
 1. To create a solution
-   ||
+   |New Project (and also Solution)|
    |-|
    |![image](https://user-images.githubusercontent.com/298017/115097644-701e2080-9ef9-11eb-9d8b-4cb54045153a.png)|
    ||
 
-   ||
+   |Names and Locations|
    |-|
    |![image](https://user-images.githubusercontent.com/298017/115097676-a6f43680-9ef9-11eb-8e8b-86cc877b4aff.png)|
    ||
 3. Create directory for solution, this will also automatically create the first project.
-   ||
+   |Solution and Project Created|
    |-|
    |![image](https://user-images.githubusercontent.com/298017/115097732-f20e4980-9ef9-11eb-94da-4275176b48bc.png)|
    ||
 
-   ||
+   |Add - New Item|
    |-|
    |![image](https://user-images.githubusercontent.com/298017/115097750-0a7e6400-9efa-11eb-9fa9-3e329c7fe86a.png)|
    ||
 
-   ||
+   |SQL Server Query|
    |-|
    |![image](https://user-images.githubusercontent.com/298017/115097770-2255e800-9efa-11eb-9310-011d3a220a26.png)|
    ||
 
-   ||
+   |Item Name|
    |-|
    |![image](https://user-images.githubusercontent.com/298017/115097791-3863a880-9efa-11eb-9588-a1dd1a6f613b.png)|
    ||
