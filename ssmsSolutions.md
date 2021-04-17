@@ -1,10 +1,10 @@
 # SSMS Solutions and Projects Explained!
 
-Just like Visual Studio, SSMS has solutions and projects. They organize your files that are important to your database application.
+Just like Visual Studio, SSMS has solutions and projects. They organize the files that are important to your database application.
 
-The biggest difference between working direclty with database objects and working with SSMS solutions is that solutions are based on files in your filesystem, not on objects in the database.
+The biggest difference between working directly with database objects and working with SSMS solutions is that solutions are based on files in your filesystem, not on objects in your database.
 
-Projects provide a way to organize the files in a solution into groups, and are basically subfolders on your filesystem. There is only one level in this hierarchy, the solution up top and the projects under it. Every file has to live in a project. You may create as many projects as needed.
+Projects provide a way to organize the files in a solution into groups, and are basically subfolders on your filesystem. The solution is at the top of the hierarchy. All projects must be part of a solution, and every file must be part of a project. Solutions can have, and often do have, more than one project. You may create as many projects as needed.
 
 ## How to create a solution
 1. To create a solution
