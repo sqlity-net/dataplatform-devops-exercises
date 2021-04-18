@@ -25,3 +25,10 @@ Write the Marketing.EmailList view:
 6. Find the the Marketing_EmailList_Tests.class.sql in the M3-Exercise2-Tests project. We have already added it for you.
 
 Write the required code and enough tests.
+
+## Optional Exercise
+
+Add the number of reservations for each customer to the view described above. You can get the number by counting the number of reservations in the Booking.Reservations table.
+
+Think about how to best test this and discuss with your partner before starting.
+
