@@ -9,5 +9,5 @@ CREATE TABLE Booking.Reservations
     CONSTRAINT [Booking.Reservations.ReservationId:DF] DEFAULT NEXT VALUE FOR Booking.ReservationSequence
     CONSTRAINT [Booking.Reservations:PK] PRIMARY KEY CLUSTERED,
   CustomerId INT,
-  AdditionalColums BINARY(200)
+  AdditionalColumns BINARY(200)
 );

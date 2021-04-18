@@ -15,6 +15,7 @@ CREATE TABLE Booking.Customers
   GenderCd CHAR(1),
   RegionId INT,
   Email NVARCHAR(MAX),
-  AdditionalColums BINARY(200)
+  OptIn BIT,
+  AdditionalColumns BINARY(200)
 );
 GO
