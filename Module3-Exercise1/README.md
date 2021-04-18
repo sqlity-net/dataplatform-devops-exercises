@@ -6,7 +6,7 @@ The goal of this exercise is write a simple function and enough tests to cover i
 The marketing department needs a salutation for customers when sending emails.
 Write a function that returns the proper greeting for marketing emails.
 
-For now the marketing department needs only a simple format, "Dear" followed by the first initial, a dot, and then the last name, eg. for the customer, "John Smith", the function would return "Dear J. Smith".
+For now the marketing department needs only a simple format, "Dear" followed by the first initial, a dot, and then the last name. For example, for the customer, "John Smith", the function would return "Dear J. Smith".
 
 Write the Marketing.GetGreeting(@FirstName,@LastName) function:
 
