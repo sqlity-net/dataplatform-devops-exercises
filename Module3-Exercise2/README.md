@@ -4,6 +4,7 @@ The goal of this exercise is write a simple function and enough tests to cover i
 ## Instructions for Exercise 2
 
 The marketing department needs a list of email addresses for email marketing purposes.
+
 Write a view that returns CustomerId, FirstName, LastName, Email, and OptIn from the Booking.Customers table, but only for those customers who have opted in to receive marketing communications (OptIn = 1).
 
 Write the Marketing.EmailList view:
