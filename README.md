@@ -159,3 +159,4 @@ Follow the steps below to set up the SQLCMD_HOME Windows environment variable.
    |![image](https://user-images.githubusercontent.com/298017/113801635-3c880d00-9727-11eb-8e15-17294a6d7a9e.png)|
    ||
 1. :warning: You must now restart SQL Server Management Studio (SSMS)
+ 
