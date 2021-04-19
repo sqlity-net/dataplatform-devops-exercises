@@ -1,10 +1,6 @@
 @echo OFF
 pushd "%~dp0"
 
-echo ---------------------------------- TODO ----------------------------------
-echo * [Nice to have] In Module1Project build.sql, how can we list the files being read with :r?
-echo.
-
 echo - Installing Projects ------------------------------------------------
 call "%~dp0\..\M1-Exercise1\build.bat" "%~1" "%~2" "%~3"
 echo.

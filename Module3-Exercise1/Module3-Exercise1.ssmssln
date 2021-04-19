@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# SQL Server Management Studio Solution File, Format Version 18.00
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "M3-Exercise1", "M3-Exercise1\M3-Exercise1.ssmssqlproj", "{28FE27C0-4B02-4B70-A0DF-BA2BD80DFFAA}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "M3-Exercise1-Tests", "M3-Exercise1-Tests\M3-Exercise1-Tests.ssmssqlproj", "{51ED3B3C-32DC-4C82-9125-E6D36599F723}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "tSQLt", "tSQLt\tSQLt.ssmssqlproj", "{543084B7-0CCD-4CCF-ABFF-755F323AA515}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "M3-PresentationDemo1", "M3-PresentationDemo1\M3-PresentationDemo1.ssmssqlproj", "{7207ADDC-2E01-4D93-9921-8ADA4F559ADC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28FE27C0-4B02-4B70-A0DF-BA2BD80DFFAA}.Default|Default.ActiveCfg = Default
+		{51ED3B3C-32DC-4C82-9125-E6D36599F723}.Default|Default.ActiveCfg = Default
+		{543084B7-0CCD-4CCF-ABFF-755F323AA515}.Default|Default.ActiveCfg = Default
+		{0E8313B7-95A4-434C-8AF1-231D88D1128D}.Default|Default.ActiveCfg = Default
+		{7207ADDC-2E01-4D93-9921-8ADA4F559ADC}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {34F94D71-BCF7-47B9-9815-28B8C86070F2}
+	EndGlobalSection
+EndGlobal
