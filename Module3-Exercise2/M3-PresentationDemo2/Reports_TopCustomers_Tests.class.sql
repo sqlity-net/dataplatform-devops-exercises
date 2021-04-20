@@ -1,6 +1,10 @@
 EXEC tSQLt.NewTestClass 'Reports_TopCustomers_Tests';
 GO
-CREATE PROCEDURE Reports_TopCustomers_Tests.[test returns the top 2 out of 3 customers with their reservation count]
+/*
+-- Note: This is neither the first nor the only test you would need to write for this particular method.
+*/
+GO
+CREATE PROCEDURE Reports_TopCustomers_Tests.[test returns the top 2 out of 3 customers based on their reservation count]
 AS
 BEGIN
   INSERT INTO Booking.Reservations(CustomerId)
