@@ -24,11 +24,11 @@
           <AssociatedConnUserName />
           <FullPath>Checkout.schema.sql</FullPath>
         </FileNode>
-        <FileNode Name="Checkout_GetTranslations_Tests.class.sql">
+        <FileNode Name="Checkout_GetTranslation_Tests.class.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
-          <FullPath>Checkout_GetTranslations_Tests.class.sql</FullPath>
+          <FullPath>Checkout_GetTranslation_Tests.class.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
