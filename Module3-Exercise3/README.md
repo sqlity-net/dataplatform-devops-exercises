@@ -15,5 +15,5 @@ Execute the upgrade in the database and run the included test.
 
 ## Instructions for Exercise 3, Part 2
 
-Use tSQLt.FakeTable to fix the test. Find the documentation for tSQLt.FakeTable [here](https://tsqlt.org/user-guide/isolating-dependencies/faketable/).
+Use tSQLt.FakeTable to fix the test. Find the documentation for tSQLt.FakeTable <a href="https://tsqlt.org/user-guide/isolating-dependencies/faketable/" target="_blank">here</a>.
 
