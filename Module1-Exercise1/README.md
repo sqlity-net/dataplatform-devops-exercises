@@ -96,6 +96,8 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
       |Arguments|"{YOURSERVERNAME\INSTANCENAME}" "-E" **"module1demodb"**|
       |Initial directory|$(ProjectDir)|
       
+      :warning: **The last (bolded) argument is the database name. Any database with that name will be dropped and recreated, so pick the name carefully!**
+      
       :bulb: If you're using SQL Authentication, replace the "-E" in the Arguments field with "-U {USERNAME} -P {PASSWORD}" in a single pair of double-quotes.
       
    1. Once those values are updated, first uncheck the "Close on exit" checkbox and then check the "Use Output window" checkbox. 

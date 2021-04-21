@@ -2,7 +2,7 @@
 pushd "%~dp0"
 
 echo - Installing Projects ------------------------------------------------
-call "%~dp0\..\M2-Exercise1\build.bat" "%~1" "%~2" "%~3"
+call "%~dp0\..\M3-Exercise2\build.bat" "%~1" "%~2" "%~3"
 echo.
 
 echo - Installing tSQLt ------------------------------------------------
