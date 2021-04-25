@@ -1,7 +1,10 @@
 # Module 3 - Exercise 4
-Learning Objective: [tSQLt.FakeTable](https://tsqlt.org/user-guide/isolating-dependencies/faketable/), testing joins
+Learning Objective: tSQLt.FakeTable, testing joins
 
 Helpful Links:
+- [tSQLt.FakeTable](https://tsqlt.org/user-guide/isolating-dependencies/faketable/)
+- [tSQLt.AssertEmptyTable](https://tsqlt.org/user-guide/assertions/assertemptytable/)
+- [tSQLt.AssertEqualsTable](https://tsqlt.org/user-guide/assertions/assertequalstable/)
 - [CREATE VIEW (Transact-SQL)](https://docs.microsoft.com/en-us/sql/t-sql/statements/create-view-transact-sql?view=sql-server-ver15)
 - [COUNT (Transact-SQL)](https://docs.microsoft.com/en-us/sql/t-sql/functions/count-transact-sql?view=sql-server-ver15)
 - [SELECT - GROUP BY- Transact-SQL](https://docs.microsoft.com/en-us/sql/t-sql/queries/select-group-by-transact-sql?view=sql-server-ver15)
