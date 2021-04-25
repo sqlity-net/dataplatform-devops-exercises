@@ -16,7 +16,7 @@
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
-          <FullPath>Reports_HotelReservationCount_Tests.class.sql</FullPath>
+          <FullPath>Reports_StateYearReservationCount_Tests.class.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
