@@ -1,9 +1,19 @@
 # Module 3 - Exercise 1
-The goal of this exercise is write a simple function and enough tests to cover its functionality.
+Learning Objective: tSQLt.AssertEqualsString
+
+Helpful Links:
+- [tSQLt.AssertEqualsString](https://tsqlt.org/user-guide/assertions/assertequalsstring/)
+- [DECLARE @local_variable (Transact-SQL)](https://docs.microsoft.com/en-us/sql/t-sql/language-elements/declare-local-variable-transact-sql?view=sql-server-ver15)
+- [CREATE FUNCTION (Transact-SQL)](https://docs.microsoft.com/en-us/sql/t-sql/statements/create-function-transact-sql?view=sql-server-ver15)
+- [+ (String Concatenation) (Transact-SQL)](https://docs.microsoft.com/en-us/sql/t-sql/language-elements/string-concatenation-transact-sql?view=sql-server-ver15)
+- [LEFT (Transact-SQL)](https://docs.microsoft.com/en-us/sql/t-sql/functions/left-transact-sql?view=sql-server-ver15)
+- [CASE (Transact-SQL)](https://docs.microsoft.com/en-us/sql/t-sql/language-elements/case-transact-sql?view=sql-server-ver15)
 
 ## Instructions for Exercise 1
 
-The marketing department needs a salutation for customers when sending emails.
+The goal of this exercise is write a simple function and enough tests to cover its functionality.
+
+The Marketing department needs a salutation for customers when sending emails.
 Write a function that returns the proper greeting for marketing emails.
 
 For now the marketing department needs only a simple format, "Dear" followed by the first initial, a dot, and then the last name. For example, for the customer, "John Smith", the function would return "Dear J. Smith".

@@ -12,11 +12,11 @@
           <AssociatedConnUserName />
           <FullPath>build.sql</FullPath>
         </FileNode>
-        <FileNode Name="LostAndFound_CalculateShipping_Tests.class.sql">
+        <FileNode Name="Marketing_GetGreeting_Tests.class.sql">
           <AssociatedConnectionMoniker />
           <AssociatedConnSrvName />
           <AssociatedConnUserName />
-          <FullPath>LostAndFound_CalculateShipping_Tests.class.sql</FullPath>
+          <FullPath>Marketing_GetGreeting_Tests.class.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
