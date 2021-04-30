@@ -9,9 +9,9 @@ Helpful Links:
 
 The goal of this exercise is use CRISP best practices to reduce test maintainance costs.
 
-Review the tests you have written so far. Refactor them to improve maintainability. 
+Review the tests you have written so far. Pick one of the best practices below and refactor your tests to follow it, for example Clean Test Names.
 
-The CRISP best practices are as follows:
+The CRISP best practices include the following:
 
 - Clean
   - Name your tests to describe the expectation, not the situation. For example, instead of [test 1 customer] use [test returns one row if there is 1 customer]
@@ -24,7 +24,6 @@ The CRISP best practices are as follows:
   - Use test case doubles to make sure that the test is independent of outside influences. See also Repeatable.
 - Speedy
   - Use as little data as possible so that your tests are fast, and thus more likely to be run frequently.
-  - Avoid long WAITFOR periods.
 - Precise
   - Write your test such that there is one and only one reason for the test to fail.
   - Write your tests such that a change in requirements results in only one test being updated.
