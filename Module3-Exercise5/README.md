@@ -14,7 +14,7 @@ Review the tests you have written so far. Refactor them to improve maintainabili
 The CRISP best practices are as follows:
 
 - Clean
-  - Name your tests to describe the expectation, not the situation. For example, instead of [test 1 customer] use [test returns a count of 1 if there is 1 customer]
+  - Name your tests to describe the expectation, not the situation. For example, instead of [test 1 customer] use [test returns one row if there is 1 customer]
   - Define test variables with descriptive and appropriate names. 
   - Create only as much data in your tests as needed to test one and only one thing. 
   - Create each test to test only one specific piece of the requirement.
