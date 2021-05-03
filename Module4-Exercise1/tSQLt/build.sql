@@ -1,4 +1,4 @@
-/*-- Run this once per server with sysadmin permissions
+--/*-- Run this once per server with sysadmin permissions
 :r temp\PrepareServer.sql
 GO
 --*/

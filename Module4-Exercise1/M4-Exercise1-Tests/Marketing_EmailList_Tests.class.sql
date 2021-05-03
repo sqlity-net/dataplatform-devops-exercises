@@ -68,7 +68,7 @@ CREATE PROCEDURE Marketing_EmailList_Tests.[test returns accurate reservation co
 AS
 BEGIN
   EXEC tSQLt.FakeTable @TableName = 'Booking.Customers';
-  EXEC tSQLt.FakeTable @TableName = 'Booking.Reservations';
+/* EXEC tSQLt.FakeTable @TableName = 'Booking.Reservations'; --*/
   INSERT INTO Booking.Customers (CustomerId, OptIn)
        VALUES(1201,1),(1202,1),(1203,1);
   INSERT INTO Booking.Reservations(CustomerId)

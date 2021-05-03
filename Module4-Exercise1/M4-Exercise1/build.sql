@@ -1,4 +1,4 @@
-:r Demo.db.sql
+:r CreateDatabase.script.sql
 GO
 
 :r Booking.schema.sql

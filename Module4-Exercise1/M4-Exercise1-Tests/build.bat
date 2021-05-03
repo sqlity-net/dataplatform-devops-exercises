@@ -16,9 +16,8 @@ type temp\installalltests.sql
 echo.
 
 echo - Deploying tests --------------------------------------------------------
-"%SQLCMD_HOME%\sqlcmd.exe" -i "%~dp0\build.sql" -S "%~1" %~2 -d "%~3"
+"%SQLCMD_HOME%\sqlcmd.exe" -i "%~dp0\build.sql" -S "%~1" %~2 -d "%~3" -b
 echo.
 
 popd
-
 
