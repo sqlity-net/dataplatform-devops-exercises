@@ -18,33 +18,184 @@ The Marketing department needs a count of reservations by hotel to better alloca
 
 Write a view that returns the number of reservations by hotel. The four columns this view returns are: HotelId, HotelName, HotelState, and ReservationCount:
 
-1. Open the Module4-Exercise1 solution in SSMS
-1. There are three projects -- one for the tests, one for the code, and one for tSQLt
-   1. M4-Exercise1 (code)
-   1. M4-Exercise1-Tests (tests)
-   1. tSQLt
-1. First create (or recreate) the database by following these steps:
-   1. Click on the M4-Exercise1-Tests project to highlight it.
-   1. Run Tools --> Build. This will drop and recreate the database and install and execute shell tests.
-   1. Please note that the test will fail with the message, "TO DO".
-1. Create a file for the HotelReservationCount view in the M4-Exercise1 project called, HotelReservationCount.view.sql
-1. Add the HotelReservationCount.view.sql file to the entries in build.sql
-
-Write the required code and enough tests.
-Think about how to best test this and discuss with your partner before starting.
-
-## Instructions for Advanced Exercise
-
-The goal of this advanced exercise is write a view called, "StateYearReservationCount", and enough tests to cover its functionality.
-
-The Finance department needs to see an overview of how reservations are performing by state and year.
-
-Write a view that returns the number of reservations by state and year. The three columns this view returns are: ReservationYear, ReservationState, and ReservationCount:
-
-1. Create a file for the StateYearReservationCount view in the M4-Exercise1 project called, StateYearReservationCount.view.sql
-1. Add the StateYearReservationCount.view.sql file to the entries in build.sql
-1. We have already created for you the Reports_StateYearReservationCount_Tests.class.sql file for your unit tests.
-
-Write the required code and enough tests.
-Think about how to best test this and discuss with your partner before starting.
-
+1. Make a new feature branch called, "my-new-feature".
+   1. xxx
+      |actions|
+      |-|
+      |![image](https://user-images.githubusercontent.com/298017/116835595-2c7e1480-ab91-11eb-9f6e-3cd0ec3a6536.png)|
+      ||
+   1. xxx
+      |enable actions|
+      |-|
+      |![image](https://user-images.githubusercontent.com/298017/116835634-57686880-ab91-11eb-9f14-951d5b9dab15.png)|
+      ||
+   1. xxx
+      |settings|
+      |-|
+      |![image](https://user-images.githubusercontent.com/298017/116835661-6cdd9280-ab91-11eb-861e-2091791c7681.png)|
+      ||
+   1. xxx
+      |secrets|
+      |-|
+      |![image](https://user-images.githubusercontent.com/298017/116835680-82eb5300-ab91-11eb-9145-fb1a4b56afc3.png)|
+      ||
+   1. xxx
+      |new secret|
+      |-|
+      |![image](https://user-images.githubusercontent.com/298017/116835693-972f5000-ab91-11eb-9b0f-622ad4c80728.png)|
+      ||
+   1. xxx
+      |SPAWNCTL_ACCESS_TOKEN|
+      |-|
+      |![image](https://user-images.githubusercontent.com/298017/116835743-d1005680-ab91-11eb-8c2d-3e57b0a4335f.png)|
+      ||
+   1. xxx
+      |back to actions|
+      |-|
+      |![image](https://user-images.githubusercontent.com/298017/116835768-ef665200-ab91-11eb-951b-29b71ca85ae5.png)|
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
+   1. xxx
+      ||
+      |-|
+      ||
+      ||
