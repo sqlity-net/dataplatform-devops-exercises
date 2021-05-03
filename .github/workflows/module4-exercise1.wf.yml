@@ -83,7 +83,7 @@ jobs:
           Write-Host "✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ";
           Write-Host "";
           
-          & ${{ github.workspace }}\Module4-Exercise1-Answers\M4-Exercise1-Tests\build.bat "${{ steps.create-container.outputs.containerFQDN }}" "-U $env:DATABASE_USERNAME -P $env:DATABASE_PASSWORD" "$env:DATABASE_NAME"
+          & ${{ github.workspace }}\Module4-Exercise1\M4-Exercise1-Tests\build.bat "${{ steps.create-container.outputs.containerFQDN }}" "-U $env:DATABASE_USERNAME -P $env:DATABASE_PASSWORD" "$env:DATABASE_NAME"
           
           Write-Host "";
           Write-Host "✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ";
@@ -102,7 +102,7 @@ jobs:
           New-Item -Path $ArtifactPath -ItemType directory -Force
           
           # Run sqlcmd to get the latest tSQLt test results as an XML file
-          & "$env:SQLCMD_HOME\sqlcmd" -i "${{ github.workspace }}\Module4-Exercise1-Answers\M4-Exercise1-Tests\GetTestOutput.script.sql" -o "$ArtifactPath\TestResults.Module4-Exercise1.xml" -S "${{ steps.create-container.outputs.containerFQDN }}" -U "$env:DATABASE_USERNAME" -P "$env:DATABASE_PASSWORD" -d "$env:DATABASE_NAME"
+          & "$env:SQLCMD_HOME\sqlcmd" -i "${{ github.workspace }}\Module4-Exercise1\M4-Exercise1-Tests\GetTestOutput.script.sql" -o "$ArtifactPath\TestResults.Module4-Exercise1.xml" -S "${{ steps.create-container.outputs.containerFQDN }}" -U "$env:DATABASE_USERNAME" -P "$env:DATABASE_PASSWORD" -d "$env:DATABASE_NAME"
           
           # Associate the commit id with the test results
           Set-Content -Path ($ArtifactPath+"CommitId.txt") -Value "${{ github.sha }}"
