@@ -104,7 +104,6 @@ Write a view that returns the number of reservations by hotel. The four columns 
       |-|
       |![image](https://user-images.githubusercontent.com/298017/116836829-0b6bf280-ab96-11eb-874a-040b952a595b.png)|
       ||
-      ||
    1. xxx
       |find the test output|
       |-|
