@@ -72,7 +72,7 @@ Write a view that returns the number of reservations by hotel. The four columns 
    1. xxx
       |now running, get summary|
       |-|
-      |![image](https://user-images.githubusercontent.com/298017/116835911-94812a80-ab92-11eb-8d11-9c613f6139b0.png)|
+      |![image](https://user-images.githubusercontent.com/298017/116836648-55a0a400-ab95-11eb-9cfe-113a77d8a585.png)|
       ||
    1. xxx
       |get details|
