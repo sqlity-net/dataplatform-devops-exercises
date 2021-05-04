@@ -1,0 +1,153 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Module 4 Exercise 1 CI Pipeline
+
+# Controls when the action will run. 
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+
+  # This workflow contains a single job called "build"
+  build-and-test:
+    # The type of runner that the job will run on
+    runs-on: windows-latest
+    
+    env:
+      TEST_ARTIFACT_DIR: ${{ github.workspace }}\output\TestResults
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # Find sqlcmd and add it to variables available to later steps
+      - name: load namespace variables into env
+        id: create-vars
+        shell: pwsh
+        run: |
+          $sqlcmdPath = (Get-Command sqlcmd).Path.TrimEnd("\\SQLCMD.EXE");
+          $databaseName = "sqlitydemodb";
+          
+          Write-Host ('::set-output name=sqlcmdPath::'+$sqlcmdPath);
+          Write-Host ('::set-output name=databaseName::'+$databaseName);
+     
+      # Install the Spawn executable to manage the sql server instances on spawn
+      - name: Install spawnctl
+        shell: pwsh
+        run: |
+          echo "Downloading and installing spawnctl..."
+          Invoke-WebRequest -Uri "https://run.spawn.cc/spawnctl.exe" -UseBasicParsing -OutFile "${{ github.workspace }}\spawnctl.exe"
+          & "${{ github.workspace }}\spawnctl.exe" version
+
+      - name: Create SQL Server Instance on Spawn Data-Container
+        id: create-container
+        shell: pwsh
+        run: |
+          $dataImageName = 'mssql';
+          
+          $containerName= & "${{ github.workspace }}\spawnctl.exe" create data-container --image $dataImageName --lifetime 30m -q
+          $containerJSON= & "${{ github.workspace }}\spawnctl.exe" get data-container $containerName -o json
+          $containerInfo = ConvertFrom-JSON -inputObject $containerJSON;
+          $containerFQDN=$containerInfo.host+", "+$containerInfo.port;
+          $containerUser=$containerInfo.user;
+          $containerPassword=$containerInfo.password;
+          
+          echo "Successfully created Spawn data container '$containerName'"
+          
+          Write-Host ('::set-output name=containerFQDN::'+$containerFQDN);
+          Write-Host ('::set-output name=containerUser::'+$containerUser);
+          Write-Host ('::set-output name=containerPassword::'+$containerPassword);
+          Write-Host ('::set-output name=containerName::'+$containerName);
+          Write-Host ('::add-mask::$containerPassword');
+          Write-Host ('::add-mask::$containerName');
+        env:
+          SPAWNCTL_ACCESS_TOKEN: ${{ secrets.SPAWNCTL_ACCESS_TOKEN }} 
+          
+      - name: Print SQL Version Info
+        shell: pwsh
+        run: |
+          Write-Host "✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ";
+          Write-Host "";
+          $DS = Invoke-Sqlcmd -ConnectionTimeout 600 -Query "SELECT SUSER_NAME() U,SYSDATETIME() T,@@VERSION V;" -ServerInstance "${{ steps.create-container.outputs.containerFQDN }}" -Username "${{ steps.create-container.outputs.containerUser }}" -Password "${{ steps.create-container.outputs.containerPassword }}" -As DataSet
+          $DS.Tables[0].Rows | %{ echo "{ $($_['U']), $($_['T']), $($_['V']) }" }    
+          Write-Host "";
+          Write-Host "✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ";
+
+      - name: Deploy Code to SQL Server Instance on Spawn and Run Tests
+        id: deploy
+        shell: pwsh
+        run: |
+          Write-Host "✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ";
+          Write-Host "";
+          
+          & ${{ github.workspace }}\Module4-Exercise1\M4-Exercise1-Tests\build.bat "${{ steps.create-container.outputs.containerFQDN }}" "-U $env:DATABASE_USERNAME -P $env:DATABASE_PASSWORD" "$env:DATABASE_NAME"
+          
+          Write-Host "";
+          Write-Host "✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ";
+        env:
+          SQLCMD_HOME: ${{ steps.create-vars.outputs.sqlcmdPath }}
+          DATABASE_NAME: ${{ steps.create-vars.outputs.databaseName }}
+          DATABASE_PASSWORD: ${{ steps.create-container.outputs.containerPassword }}
+          DATABASE_USERNAME: ${{ steps.create-container.outputs.containerUser }}
+
+      - name: Create JUnit Artifact
+        shell: pwsh
+        run: |
+          # Create the JUnit Artifact directory
+          $ArtifactPath = "$env:TEST_ARTIFACT_DIR";
+          $ArtifactPath;
+          New-Item -Path $ArtifactPath -ItemType directory -Force
+          
+          # Run sqlcmd to get the latest tSQLt test results as an XML file
+          & "$env:SQLCMD_HOME\sqlcmd" -i "${{ github.workspace }}\Module4-Exercise1\M4-Exercise1-Tests\GetTestOutput.script.sql" -o "$ArtifactPath\TestResults.Module4-Exercise1.xml" -S "${{ steps.create-container.outputs.containerFQDN }}" -U "$env:DATABASE_USERNAME" -P "$env:DATABASE_PASSWORD" -d "$env:DATABASE_NAME"
+          
+          # Associate the commit id with the test results
+          Set-Content -Path ($ArtifactPath+"CommitId.txt") -Value "${{ github.sha }}"
+        env:
+          SQLCMD_HOME: ${{ steps.create-vars.outputs.sqlcmdPath }}
+          DATABASE_NAME: ${{ steps.create-vars.outputs.databaseName }}
+          DATABASE_PASSWORD: ${{ steps.create-container.outputs.containerPassword }}
+          DATABASE_USERNAME: ${{ steps.create-container.outputs.containerUser }}
+
+      - name: Publish JUnit Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          if-no-files-found: error
+          name: JUnitArtifact
+          path: "${{ env.TEST_ARTIFACT_DIR }}\\"
+          
+      - name: Check Test Results
+        shell: pwsh
+        run: |
+          $DS = Invoke-Sqlcmd -ConnectionTimeout 600 -Query "SELECT Msg, CASE WHEN FailCnt+ErrorCnt > 0 THEN 0 ELSE 1 END IsSuccessful FROM tSQLt.TestCaseSummary();" -ServerInstance "${{ steps.create-container.outputs.containerFQDN }}" -Username "${{ steps.create-container.outputs.containerUser }}" -Password "${{ steps.create-container.outputs.containerPassword }}" -As DataSet -Database "$env:DATABASE_NAME"
+
+          $Message = "　" + $DS.Tables[0].Rows[0].Msg;    
+          $IsSuccessful = $DS.Tables[0].Rows[0].IsSuccessful;
+          
+          if ($IsSuccessful -eq 0) {
+            $TestResultsOutput = "🔴 Failure 🔴 　　　" + $Message;
+            Write-Host "::error::$TestResultsOutput";
+            exit 1;
+          } else {
+            $TestResultsOutput = "🟢 Success 🟢 　　　" + $Message;
+            Write-Host "::warning::$TestResultsOutput";
+          }
+
+        env:
+          DATABASE_NAME: ${{ steps.create-vars.outputs.databaseName }}
+          DATABASE_PASSWORD: ${{ steps.create-container.outputs.containerPassword }}
+          DATABASE_USERNAME: ${{ steps.create-container.outputs.containerUser }}
+      
+      
+      - name: Drop Spawn Data-Container
+        if: ${{ always() && steps.create-container.outcome == 'success' }}
+        shell: pwsh
+        run: |
+          & "${{ github.workspace }}\spawnctl.exe" delete data-container "${{ steps.create-container.outputs.containerName }}"
+          echo "Successfully deleted Spawn data container '${{ steps.create-container.outputs.containerName }}'"
+        env:
+          SPAWNCTL_ACCESS_TOKEN: ${{ secrets.SPAWNCTL_ACCESS_TOKEN }} 
+          

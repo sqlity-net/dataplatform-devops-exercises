@@ -10,7 +10,7 @@ Helpful Links:
 
 ## Instructions for Exercise 2
 
-The goal of this exercise is write a simple function and enough tests to cover its functionality.
+The goal of this exercise is write a simple view and enough tests to cover its functionality.
 
 The marketing department needs a list of email addresses for email marketing purposes.
 
