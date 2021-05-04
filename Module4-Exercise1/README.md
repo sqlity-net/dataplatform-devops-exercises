@@ -117,7 +117,7 @@ Set up the GitHub Actions workflow as a simple CI Pipeline; identify the unsucce
    1. xxx
       ||
       |-|
-      ||
+      |![image](https://user-images.githubusercontent.com/298017/116953604-b09cce80-ac5b-11eb-8cdf-ec553bde881a.png)|
       ||
    1. xxx
       ||
