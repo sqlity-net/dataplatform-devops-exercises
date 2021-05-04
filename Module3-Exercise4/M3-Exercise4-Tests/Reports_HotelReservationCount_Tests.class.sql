@@ -5,4 +5,4 @@ AS
 BEGIN
   EXEC tSQLt.Fail 'TODO';
 END
-GO;
+GO
