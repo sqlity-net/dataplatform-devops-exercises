@@ -26,7 +26,7 @@ Write a view that returns the number of reservations by hotel. The four columns 
 1. First create (or recreate) the database by following these steps:
    1. Click on the M3-Exercise4-Tests project to highlight it.
    1. Run Tools --> Build. This will drop and recreate the database and install and execute shell tests.
-   1. Please note that the test will fail with the message, "TO DO".
+   1. Please note that the test will fail with the message, "TO DO". This is not happening for some reason. You guys have an idea why?
 1. Create a file for the HotelReservationCount view in the M3-Exercise4 project called, HotelReservationCount.view.sql
 1. Add the HotelReservationCount.view.sql file to the entries in build.sql
 
