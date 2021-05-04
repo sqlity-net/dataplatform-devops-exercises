@@ -113,7 +113,7 @@ Set up the GitHub Actions workflow as a simple CI Pipeline; identify the unsucce
       |-|
       ||
       ||
-1. Confirm that you have fixed all the issues by checking in your code and tests and re-running the pipeline. You are done once you get a "green" build.
+1. Confirm that you have fixed all the issues by checking in your code and tests and re-running the pipeline. You are done once you get a "🟢 Success 🟢" build.
    1. xxx
       ||
       |-|
