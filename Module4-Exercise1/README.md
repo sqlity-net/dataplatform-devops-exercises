@@ -65,56 +65,55 @@ Set up the GitHub Actions workflow as a simple CI Pipeline; identify the unsucce
       |-|
       |![image](https://user-images.githubusercontent.com/298017/116835867-4ff58f00-ab92-11eb-82dd-d4cd736a9436.png)|
       ||
-   1. xxx
+1. Find and inspect the workflow logs.
+   1. Click on the workflow run link.
       |now running, get summary|
       |-|
       |![image](https://user-images.githubusercontent.com/298017/116836648-55a0a400-ab95-11eb-9cfe-113a77d8a585.png)|
       ||
-   1. xxx
+   1. Note that the job "build-and-test" is both in the left navigation and summary. Click on either.
       |get details|
       |-|
       |![image](https://user-images.githubusercontent.com/298017/116835950-be3a5180-ab92-11eb-8e57-0c70e8fcb287.png)|
       ||
-   1. xxx
+   1. The job log is displayed with a list of steps.
       |details|
       |-|
       |![image](https://user-images.githubusercontent.com/298017/116835969-d4481200-ab92-11eb-8b07-ad43f6494bb8.png)|
       ||
-   1. xxx
+   1. After the job finishes, return to the Summary page for the workflow run by clicking on the "Summary" link in the left-navigation.
       |return to summary|
       |-|
       |![image](https://user-images.githubusercontent.com/298017/116836010-f9d51b80-ab92-11eb-8438-de100ee5c225.png)|
       ||
-   1. xxx
+1. Identify unsuccessful tests.
+   1. Note that the Annotations section of the Summary will show the tSQLt summary information, including the count of unsuccessful tests. If there are failing tests (and really there should be) click back into the job.
       |tests are failing|
       |-|
       |![image](https://user-images.githubusercontent.com/298017/116836210-a44d3e80-ab93-11eb-9bca-ace792df6617.png)|
       ||
-   1. xxx
+   1. Expand the logs for the step which deploys the codes and executes the test. It is called, "Deploy Code to SQL Server Instance on Spawn and Run Tests".
       |get build output|
       |-|
       |![image](https://user-images.githubusercontent.com/298017/116836233-ba5aff00-ab93-11eb-859d-7a3a6aaff09e.png)|
       ||
-   1. xxx
+1. For each unsuccessful test:
+   1. Scroll to the bottom of the logs to see which tests are unsuccessful.
       |a failing test|
       |-|
       |![image](https://user-images.githubusercontent.com/298017/116836829-0b6bf280-ab96-11eb-874a-040b952a595b.png)|
       ||
-   1. xxx
+   1. Copy the test name without the brackets and schema name, and paste it into the search box at the top right. This should move the cursor to the test's output. If it doesn't, you can navigate to the next search result with the arrows to the right of the search box.
       |find the test output|
       |-|
       |![image](https://user-images.githubusercontent.com/298017/116836606-25590580-ab95-11eb-8103-c1683d86522c.png)|
       ||
-   1. xxx
+   1. Based on the output you see, make the necessary changes to tests and/or code to fix the problem.
       ||
       |-|
       ||
       ||
-   1. xxx
-      ||
-      |-|
-      ||
-      ||
+1. Confirm that you have fixed all the issues by checking in your code and tests and re-running the pipeline. You are done once you get a "green" build.
    1. xxx
       ||
       |-|
