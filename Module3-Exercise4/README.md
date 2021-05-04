@@ -12,7 +12,7 @@ Helpful Links:
 
 ## Instructions for Exercise 4
 
-The goal of this exercise is write a simple view called, "HotelReservationCount", and enough tests to cover its functionality.
+The goal of this exercise is to write a simple view called, "HotelReservationCount", and enough tests to cover its functionality.
 
 The Marketing department needs a count of reservations by hotel to better allocate marketing efforts.
 
