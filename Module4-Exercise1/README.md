@@ -113,84 +113,9 @@ Set up the GitHub Actions workflow as a simple CI Pipeline; identify the unsucce
       |-|
       ||
       ||
-1. Confirm that you have fixed all the issues by checking in your code and tests and re-running the pipeline. You are done once you get a "🟢 Success 🟢" build.
-   1. xxx
+1. Confirm that you have fixed all the issues by checking in your code and tests and re-running the pipeline. 
+   1. You are done once you get a "🟢 Success 🟢" build.
       ||
       |-|
       |![image](https://user-images.githubusercontent.com/298017/116953604-b09cce80-ac5b-11eb-8cdf-ec553bde881a.png)|
-      ||
-   1. xxx
-      ||
-      |-|
-      ||
-      ||
-   1. xxx
-      ||
-      |-|
-      ||
-      ||
-   1. xxx
-      ||
-      |-|
-      ||
-      ||
-   1. xxx
-      ||
-      |-|
-      ||
-      ||
-   1. xxx
-      ||
-      |-|
-      ||
-      ||
-   1. xxx
-      ||
-      |-|
-      ||
-      ||
-   1. xxx
-      ||
-      |-|
-      ||
-      ||
-   1. xxx
-      ||
-      |-|
-      ||
-      ||
-   1. xxx
-      ||
-      |-|
-      ||
-      ||
-   1. xxx
-      ||
-      |-|
-      ||
-      ||
-   1. xxx
-      ||
-      |-|
-      ||
-      ||
-   1. xxx
-      ||
-      |-|
-      ||
-      ||
-   1. xxx
-      ||
-      |-|
-      ||
-      ||
-   1. xxx
-      ||
-      |-|
-      ||
-      ||
-   1. xxx
-      ||
-      |-|
-      ||
       ||
