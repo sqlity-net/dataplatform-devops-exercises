@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="M4-Exercise1">
+  <Items>
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+      <Items />
+    </LogicalFolder>
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="Booking.Customers.tbl.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Booking.Customers.tbl.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Booking.Reservations.tbl.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Booking.Reservations.tbl.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Booking.schema.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Booking.schema.sql</FullPath>
+        </FileNode>
+        <FileNode Name="build.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>build.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Checkout.GetDiscount.sfn.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Checkout.GetDiscount.sfn.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Checkout.GetTranslation.sfn.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Checkout.GetTranslation.sfn.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Checkout.schema.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Checkout.schema.sql</FullPath>
+        </FileNode>
+        <FileNode Name="create.demo.db.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>create.demo.db.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Demo.db.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Demo.db.sql</FullPath>
+        </FileNode>
+        <FileNode Name="LostAndFound.CalculateHandling.sfn.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>LostAndFound.CalculateHandling.sfn.sql</FullPath>
+        </FileNode>
+        <FileNode Name="LostAndFound.CalculateShipping.sfn.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>LostAndFound.CalculateShipping.sfn.sql</FullPath>
+        </FileNode>
+        <FileNode Name="LostAndFound.schema.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>LostAndFound.schema.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Marketing.EmailList.view.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Marketing.EmailList.view.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Marketing.GetGreeting.sfn.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Marketing.GetGreeting.sfn.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Marketing.schema.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Marketing.schema.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Reports.CalculateReportDateRange.sfn.M3E6.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Reports.CalculateReportDateRange.sfn.M3E6.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Reports.CalculateReportDateRange.sfn.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Reports.CalculateReportDateRange.sfn.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Reports.CustomerReservationList.view.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Reports.CustomerReservationList.view.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Reports.CustomerReservationSummary.ssp.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Reports.CustomerReservationSummary.ssp.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Reports.CustomerReservationSummaryDetail.ssp.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Reports.CustomerReservationSummaryDetail.ssp.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Reports.CustomerReservationSummaryHeader.sfn.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Reports.CustomerReservationSummaryHeader.sfn.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Reports.HotelReservationCount.view.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Reports.HotelReservationCount.view.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Reports.MySysDateTime.sfn.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Reports.MySysDateTime.sfn.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Reports.schema.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Reports.schema.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Reports.StateYearReservationCount.view.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Reports.StateYearReservationCount.view.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Reports.TopNCustomers.sfn.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Reports.TopNCustomers.sfn.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Tools.GetNums.sfn.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Tools.GetNums.sfn.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Tools.schema.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Tools.schema.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Vendors.Hotels.tbl.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Vendors.Hotels.tbl.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Vendors.schema.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>Vendors.schema.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+      <Items>
+        <FileNode Name="build.bat">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>build.bat</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+  </Items>
+</SqlWorkbenchSqlProject>

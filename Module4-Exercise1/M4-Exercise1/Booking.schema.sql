@@ -1,0 +1,2 @@
+CREATE SCHEMA Booking;
+GO
