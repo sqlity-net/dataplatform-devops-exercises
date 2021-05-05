@@ -1,7 +1,16 @@
 # Module 3 - Exercise 2
-The goal of this exercise is write a simple function and enough tests to cover its functionality.
+Learning Objective: tSQLt.FakeTable
+
+Helpful Links:
+- [tSQLt.FakeTable](https://tsqlt.org/user-guide/isolating-dependencies/faketable/)
+- [tSQLt.AssertEmptyTable](https://tsqlt.org/user-guide/assertions/assertemptytable/)
+- [tSQLt.AssertEqualsTable](https://tsqlt.org/user-guide/assertions/assertequalstable/)
+- [CREATE SCHEMA (Transact-SQL)](https://docs.microsoft.com/en-us/sql/t-sql/statements/create-schema-transact-sql?view=sql-server-ver15)
+- [CREATE VIEW (Transact-SQL)](https://docs.microsoft.com/en-us/sql/t-sql/statements/create-view-transact-sql?view=sql-server-ver15)
 
 ## Instructions for Exercise 2
+
+The goal of this exercise is write a simple view and enough tests to cover its functionality.
 
 The marketing department needs a list of email addresses for email marketing purposes.
 
@@ -27,6 +36,13 @@ Write the Marketing.EmailList view:
 Write the required code and enough tests.
 
 ## Optional Exercise
+Learning Objective: tSQLt.FakeTable, testing joins
+
+Helpful Links:
+- [ISNULL (Transact-SQL)](https://docs.microsoft.com/en-us/sql/t-sql/functions/isnull-transact-sql?view=sql-server-ver15)
+- [COUNT (Transact-SQL)](https://docs.microsoft.com/en-us/sql/t-sql/functions/count-transact-sql?view=sql-server-ver15)
+- [Joins (SQL Server)](https://docs.microsoft.com/en-us/sql/relational-databases/performance/joins?view=sql-server-ver15)
+- [FROM clause plus JOIN, APPLY, PIVOT (Transact-SQL)](https://docs.microsoft.com/en-us/sql/t-sql/queries/from-transact-sql?view=sql-server-ver15)
 
 Add the number of reservations for each customer to the view described above. You can get the number by counting the number of reservations in the Booking.Reservations table.
 

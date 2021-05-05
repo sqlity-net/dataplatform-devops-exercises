@@ -1,34 +1,18 @@
-# Module 3 - Exercise 2
-The goal of this exercise is write a simple function and enough tests to cover its functionality.
+# Module 3 - Exercise 3
+The goal of this exercise is to show how to isolate code from the specific implementation of external dependencies, in this case tables.
 
-## Instructions for Exercise 2
+## Instructions for Exercise 3, Part 1
 
-The marketing department needs a list of email addresses for email marketing purposes.
+The database team has decided that they forgot an important implementation detail in the Booking.Reservations table and has provided a migration script to upgrade your database to the new version.
 
-Write a view that returns CustomerId, FirstName, LastName, Email, and OptIn from the Booking.Customers table, but only for those customers who have opted in to receive marketing communications (OptIn = 1).
+You want to make sure that this upgrade doesn't impact your code.
 
-Write the Marketing.EmailList view:
-
+Execute the upgrade in the database and run the included test.
 1. Open the Module3-Exercise3 solution in SSMS
-1. There are four projects -- one for the tests, one for the code, one that includes both code and tests from the demo, and one for tSQLt
-   1. M3-Exercise3 (code)
-   1. M3-Exercise3-Tests (tests)
-   1. Module3-PresentationDemo2 
-   1. tSQLt
-1. First create (or recreate) the database by following these steps:
-   1. Click on the M3-Exercise3-Tests project to highlight it.
-   1. Run Tools --> Build. This will drop and recreate the database and install and execute a shell test.
-   1. If you would like to also install the demo code in the database, click on Module3-PresentationDemo2 instead in step i) above.
-3. Create a file to create the Marketing schema in the M3-Exercise3 project called, Marketing.schema.sql
-4. Create a file for the view in the M3-Exercise3 project called, Marketing.EmailList.view.sql
-5. Add entries for both files in build.sql, by following the example you'll find in build.sql
-6. Find the the Marketing_EmailList_Tests.class.sql in the M3-Exercise3-Tests project. We have already added it for you.
+1. Select the M3-Exercise3-Tests project and "Build" it. Does the included test pass? Record your answer.
+1. Find the "➜➜Run_This.sql" file in the M3-Exercise3 project, open it, and execute it. This will run the migration script and run the test.
+1. Does the test still pass? Record your answer.
 
-Write the required code and enough tests.
+## Instructions for Exercise 3, Part 2
 
-## Optional Exercise
-
-Add the number of reservations for each customer to the view described above. You can get the number by counting the number of reservations in the Booking.Reservations table.
-
-Think about how to best test this and discuss with your partner before starting.
-
+Use tSQLt.FakeTable to fix the test. Find the documentation for tSQLt.FakeTable [here](https://tsqlt.org/user-guide/isolating-dependencies/faketable).

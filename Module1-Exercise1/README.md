@@ -67,7 +67,7 @@ The goal of this exercise is to familiarize yourself with SSMS database projects
       |-|-|
       |Ctrl-9 | EXEC tSQLt.RunC;--|
       |Ctrl-0 | EXEC tSQLt.RunAll;--|
-1. In SSMS create a External Tools entry for "Build"
+1. In SSMS create an External Tools entry for "Build"
    1. In SSMS open the "Tools" menu and click on "External Tools...".
       ||
       |-|
