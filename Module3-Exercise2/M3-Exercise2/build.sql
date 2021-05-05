@@ -10,5 +10,8 @@ GO
 :r Booking.Reservations.tbl.sql
 GO
 
---:r <filename>
+:r Marketing.SCHEMA.sql
+GO
+
+:r Marketing.EmailList.view.sql
 GO
