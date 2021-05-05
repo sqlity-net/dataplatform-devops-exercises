@@ -29,6 +29,7 @@ Write a view that returns the number of reservations by hotel. The four columns 
    1. Please note that the test will fail with the message, "TO DO".
 1. Create a file for the HotelReservationCount view in the M3-Exercise4 project called, Reports.HotelReservationCount.view.sql
 1. Add the Reports.HotelReservationCount.view.sql file to the entries in build.sql
+1. We have already created for you the Reports_HotelReservationCount_Tests.class.sql file for your unit tests.
 
 Write the required code and enough tests.
 Think about how to best test this and discuss with your partner before starting.
