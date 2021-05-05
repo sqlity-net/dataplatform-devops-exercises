@@ -7,6 +7,9 @@ GO
 CREATE PROCEDURE Reports_TopCustomers_Tests.[test returns the top 2 out of 3 customers based on their reservation count]
 AS
 BEGIN
+  EXEC tSQLt.FakeTable @TableName = N'Reservations',        
+                       @SchemaName = N'Booking';
+
   INSERT INTO Booking.Reservations(CustomerId)
   VALUES(1001),(1001),(1001),(2002),(3003),(3003);
   
