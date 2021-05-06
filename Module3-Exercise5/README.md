@@ -28,7 +28,7 @@ The CRISP best practices include the following:
   - Write your test such that there is one and only one reason for the test to fail.
   - Write your tests such that a change in requirements results in only one test being updated.
   - Be precise in the test expectations. For example instead of expecting 3 rows to be returned using COUNT(), use tSQLt.AssertEqualsTable to specify the exact column values.
-  - Heuristics:
+  - Write enough, but not too many tests. Use Heuristics:
     - **Boundary Condition**
  
       For every boundary condition write three tests: 1 just left of the boundary, one on the boundary, and one just right of the boundary.
