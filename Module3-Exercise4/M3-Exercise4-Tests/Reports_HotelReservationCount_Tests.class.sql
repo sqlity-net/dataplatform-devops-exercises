@@ -4,5 +4,5 @@ CREATE PROCEDURE Reports_HotelReservationCount_Tests.[test shell test]
 AS
 BEGIN
   EXEC tSQLt.Fail 'TODO';
-END
-GO;
+END;
+GO

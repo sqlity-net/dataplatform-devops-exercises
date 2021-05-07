@@ -12,7 +12,7 @@ Helpful Links:
 
 ## Instructions for Exercise 4
 
-The goal of this exercise is write a simple view called, "HotelReservationCount", and enough tests to cover its functionality.
+The goal of this exercise is to write a simple view called, "Reports.HotelReservationCount", and enough tests to cover its functionality.
 
 The Marketing department needs a count of reservations by hotel to better allocate marketing efforts.
 
@@ -27,22 +27,23 @@ Write a view that returns the number of reservations by hotel. The four columns 
    1. Click on the M3-Exercise4-Tests project to highlight it.
    1. Run Tools --> Build. This will drop and recreate the database and install and execute shell tests.
    1. Please note that the test will fail with the message, "TO DO".
-1. Create a file for the HotelReservationCount view in the M3-Exercise4 project called, HotelReservationCount.view.sql
-1. Add the HotelReservationCount.view.sql file to the entries in build.sql
+1. Create a file for the Reports.HotelReservationCount view in the M3-Exercise4 project called, Reports.HotelReservationCount.view.sql
+1. Add the Reports.HotelReservationCount.view.sql file to the entries in build.sql
+1. We have already created for you the Reports_HotelReservationCount_Tests.class.sql file for your unit tests.
 
 Write the required code and enough tests.
 Think about how to best test this and discuss with your partner before starting.
 
 ## Instructions for Advanced Exercise
 
-The goal of this advanced exercise is write a view called, "StateYearReservationCount", and enough tests to cover its functionality.
+The goal of this advanced exercise is write a view called, "Reports.StateYearReservationCount", and enough tests to cover its functionality.
 
 The Finance department needs to see an overview of how reservations are performing by state and year.
 
 Write a view that returns the number of reservations by state and year. The three columns this view returns are: ReservationYear, ReservationState, and ReservationCount:
 
-1. Create a file for the StateYearReservationCount view in the M3-Exercise4 project called, StateYearReservationCount.view.sql
-1. Add the StateYearReservationCount.view.sql file to the entries in build.sql
+1. Create a file for the Reports.StateYearReservationCount view in the M3-Exercise4 project called, Reports.StateYearReservationCount.view.sql
+1. Add the Reports.StateYearReservationCount.view.sql file to the entries in build.sql
 1. We have already created for you the Reports_StateYearReservationCount_Tests.class.sql file for your unit tests.
 
 Write the required code and enough tests.
