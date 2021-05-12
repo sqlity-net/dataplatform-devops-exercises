@@ -67,83 +67,86 @@ https://gitpod.io/#https://github.com/sqlity-net/dataplatform-devops-exercises
    ||
 
 1. xx
-   ||
+   |spawnctl onboard|
    |-|
-   ||
+   |![image](https://user-images.githubusercontent.com/298017/117912888-5381c800-b2ae-11eb-8a06-3aaaa5a4119a.png)|
    ||
 
 1. xx
-   ||
+   |y,accept,accept|
    |-|
-   ||
+   |![image](https://user-images.githubusercontent.com/298017/117913053-a491bc00-b2ae-11eb-968a-f2c7264628d9.png)|
    ||
 
 1. xx
-   ||
+   |spawnctl create access-token|
    |-|
-   ||
+   |![image](https://user-images.githubusercontent.com/298017/117913088-b5dac880-b2ae-11eb-9786-0f5779cf72f5.png)|
    ||
 
 1. xx
-   ||
+   |copy token|
    |-|
-   ||
+   |![image](https://user-images.githubusercontent.com/298017/117913130-c7bc6b80-b2ae-11eb-9d07-d3c8cadd36b2.png)|
    ||
 
 1. xx
-   ||
+   |github repository settings|
    |-|
-   ||
+   |![image](https://user-images.githubusercontent.com/298017/117913212-fb979100-b2ae-11eb-97ae-4746397262fe.png)|
    ||
 
 1. xx
-   ||
+   |github repository secrets|
    |-|
-   ||
+   |![image](https://user-images.githubusercontent.com/298017/117913261-110cbb00-b2af-11eb-869b-232ab06ce664.png)|
    ||
 
 1. xx
-   ||
+   |new repository secret|
    |-|
-   ||
+   |![image](https://user-images.githubusercontent.com/298017/117913294-21bd3100-b2af-11eb-92a0-441709ce010d.png)|
    ||
 
 1. xx
-   ||
+   |SPAWNCTL_ACCESS_TOKEN|
    |-|
-   ||
+   |![image](https://user-images.githubusercontent.com/298017/117913318-2a156c00-b2af-11eb-93ba-edee2a9eff6a.png)|
    ||
 
 1. xx
-   ||
+   |done|
    |-|
+   |![image](https://user-images.githubusercontent.com/298017/117913375-431e1d00-b2af-11eb-9be1-ddf8ba5ade6e.png)|
    ||
+
+**Drop Container**
+
+1. xx
+   |gitpod workspaces|
+   |-|
+   |![image](https://user-images.githubusercontent.com/298017/117913420-53ce9300-b2af-11eb-989f-ab9b72e6e8f5.png)|
    ||
 
 1. xx
-   ||
+   |delete|
    |-|
-   ||
+   |![image](https://user-images.githubusercontent.com/298017/117913441-61841880-b2af-11eb-9081-f527c2275de1.png)|
    ||
 
 1. xx
-   ||
+   |confirm|
    |-|
-   ||
+   |![image](https://user-images.githubusercontent.com/298017/117913472-6a74ea00-b2af-11eb-8f14-976eb1884ec7.png)|
    ||
 
 1. xx
-   ||
+   |refresh page|
    |-|
-   ||
+   |![image](https://user-images.githubusercontent.com/298017/117913496-72348e80-b2af-11eb-99b7-b60899a4baec.png)|
    ||
 
-1. xx
-   ||
-   |-|
-   ||
-   ||
-
+**xxx**
 1. xx
    ||
    |-|
