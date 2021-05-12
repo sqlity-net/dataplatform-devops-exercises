@@ -12,13 +12,13 @@ The goal of this exercise is to use set up the required repository secrets to en
 
 You will use Gitpod to create a temporary development environment. In that development environment, you will authenticate to Spawn, onboard, and then generate a token. That token must be saved as a repository secret in your GitHub repo.
 
-1. In a new tab in your browser, open this link https://gitpod.io/#https://github.com/sqlity-net/dataplatform-devops-exercises
+1. In a new tab or browser window, open this url `https://gitpod.io/#https://github.com/sqlity-net/dataplatform-devops-exercises`
    |gitpod link|
    |-|
    |![image](https://user-images.githubusercontent.com/298017/117911689-377d2700-b2ac-11eb-9d07-58bc6c39cdff.png)|
    ||
 
-1. Click on "Continue with GitHub"
+1. Login by clicking on "Continue with GitHub"
    |gitpod login|
    |-|
    |![image](https://user-images.githubusercontent.com/298017/117911925-93e04680-b2ac-11eb-88a7-b7d75c44b9b0.png)|
@@ -66,7 +66,7 @@ You will use Gitpod to create a temporary development environment. In that devel
    |![image](https://user-images.githubusercontent.com/298017/117912180-07825380-b2ad-11eb-9dda-90c8b846fc92.png)|
    ||
 
-1. This will take you to an authorization page. Click the green "Authorize reg-gate" button.
+1. This will take you to an authorization page. Click the green "Authorize red-gate" button.
    |github authentication 2|
    |-|
    |![image](https://user-images.githubusercontent.com/298017/117912783-1e757580-b2ae-11eb-8c66-b11e8648a533.png)|
@@ -102,7 +102,7 @@ You will use Gitpod to create a temporary development environment. In that devel
    |![image](https://user-images.githubusercontent.com/298017/117913130-c7bc6b80-b2ae-11eb-9d07-d3c8cadd36b2.png)|
    ||
 
-1. Back in your github repository, click on the "Settings" tab.
+1. Back in your GitHub repository, click on the "Settings" tab.
    |github repository settings|
    |-|
    |![image](https://user-images.githubusercontent.com/298017/117913212-fb979100-b2ae-11eb-97ae-4746397262fe.png)|
@@ -120,7 +120,7 @@ You will use Gitpod to create a temporary development environment. In that devel
    |![image](https://user-images.githubusercontent.com/298017/117913294-21bd3100-b2af-11eb-92a0-441709ce010d.png)|
    ||
 
-1. Create a new token with the Name, "SPAWNCTL_ACCESS_TOKEN", and paste the access token into the Value field. Click "Add Secret" to confirm.
+1. Create a new token with the Name, "SPAWNCTL_ACCESS_TOKEN", and paste the access token from Step #15 into the Value field. Click "Add Secret" to confirm.
    |SPAWNCTL_ACCESS_TOKEN|
    |-|
    |![image](https://user-images.githubusercontent.com/298017/117913318-2a156c00-b2af-11eb-93ba-edee2a9eff6a.png)|
@@ -132,10 +132,11 @@ You will use Gitpod to create a temporary development environment. In that devel
    |![image](https://user-images.githubusercontent.com/298017/117913375-431e1d00-b2af-11eb-9be1-ddf8ba5ade6e.png)|
    ||
 
-**Delete the Gitpod Development Environment**
+### Delete the Gitpod Development Environment
+
 Now that you have successfully created and saved the access token required for Spawn, you should delete the Gitpod development environment.
 
-1. Navigate to https://gitpod.io/workspaces
+1. Navigate to `https://gitpod.io/workspaces` in a new tab or browser window.
    |gitpod workspaces|
    |-|
    |![image](https://user-images.githubusercontent.com/298017/117913420-53ce9300-b2af-11eb-989f-ab9b72e6e8f5.png)|
