@@ -111,10 +111,6 @@ Set up the GitHub Actions workflow as a simple CI Pipeline; identify the unsucce
       |![image](https://user-images.githubusercontent.com/298017/116836606-25590580-ab95-11eb-8103-c1683d86522c.png)|
       ||
    1. Based on the output you see, make the necessary changes to tests and/or code to fix the problem.
-      ||
-      |-|
-      ||
-      ||
 1. Confirm that you have fixed all the issues by checking in your code and tests and re-running the pipeline. 
    1. You are done once you get a 🟢 Success 🟢 build.
       ||
