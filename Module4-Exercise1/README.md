@@ -14,15 +14,19 @@ Your colleague has gone on vacation (suddenly) and left you with their code. A c
 Set up the GitHub Actions workflow as a simple CI Pipeline; identify the unsuccessful tests; and make the required changes to get a "green" build:
 
 1. Make sure that your forked repository is up to date. There should be both a ".github/workflows" and a "Module4-Exercise1" folder. Now find the "Actions" tab header and click on it.
+
   |actions|
   |-|
   |![image](https://user-images.githubusercontent.com/298017/116835595-2c7e1480-ab91-11eb-9f6e-3cd0ec3a6536.png)|
   ||
+
 1. Click on the "I understand my workflows, go ahead and enable them" button to enable worfklows for your repository.
+
   |enable actions|
   |-|
   |![image](https://user-images.githubusercontent.com/298017/116835634-57686880-ab91-11eb-9f14-951d5b9dab15.png)|
   ||
+
 1. Create a repository secret to allow you to use on-demand SQL Instances in Redgate Spawn.
    1. Click on the "Settings" tabe header.
       |settings|
