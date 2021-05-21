@@ -14,41 +14,19 @@ Your colleague has gone on vacation (suddenly) and left you with their code. A c
 Set up the GitHub Actions workflow as a simple CI Pipeline; identify the unsuccessful tests; and make the required changes to get a "green" build:
 
 1. Make sure that your forked repository is up to date. There should be both a ".github/workflows" and a "Module4-Exercise1" folder. Now find the "Actions" tab header and click on it.
-  |actions|
-  |-|
-  |![image](https://user-images.githubusercontent.com/298017/116835595-2c7e1480-ab91-11eb-9f6e-3cd0ec3a6536.png)|
-  ||
+   |actions|
+   |-|
+   |![image](https://user-images.githubusercontent.com/298017/116835595-2c7e1480-ab91-11eb-9f6e-3cd0ec3a6536.png)|
+   ||
+
 1. Click on the "I understand my workflows, go ahead and enable them" button to enable worfklows for your repository.
-  |enable actions|
-  |-|
-  |![image](https://user-images.githubusercontent.com/298017/116835634-57686880-ab91-11eb-9f14-951d5b9dab15.png)|
-  ||
-1. Create a repository secret to allow you to use on-demand SQL Instances in Redgate Spawn.
-   1. Click on the "Settings" tabe header.
-      |settings|
-      |-|
-      |![image](https://user-images.githubusercontent.com/298017/116835661-6cdd9280-ab91-11eb-861e-2091791c7681.png)|
-      ||
-   1. Now click on the "Secrets" left navigation option.
-      |secrets|
-      |-|
-      |![image](https://user-images.githubusercontent.com/298017/116835680-82eb5300-ab91-11eb-9145-fb1a4b56afc3.png)|
-      ||
-   1. Click the "New repository secret" button.
-      |new secret|
-      |-|
-      |![image](https://user-images.githubusercontent.com/298017/116835693-972f5000-ab91-11eb-9b0f-622ad4c80728.png)|
-      ||
-   1. Enter "SPAWNCTL_ACCESS_TOKEN" for the Name and the provided access token for the Value, and click "Add Secret".
-      |SPAWNCTL_ACCESS_TOKEN|
-      |-|
-      |![image](https://user-images.githubusercontent.com/298017/116835743-d1005680-ab91-11eb-8c2d-3e57b0a4335f.png)|
-      ||
-   1. Confirm that you have a "SPAWNCTL_ACCESS_TOKEN" in your Repository Secrets list. Then click on the "Actions" tab header.
-      |back to actions|
-      |-|
-      |![image](https://user-images.githubusercontent.com/298017/116835768-ef665200-ab91-11eb-951b-29b71ca85ae5.png)|
-      ||
+   |enable actions| 
+   |-|
+   |![image](https://user-images.githubusercontent.com/298017/116835634-57686880-ab91-11eb-9f14-951d5b9dab15.png)|
+   ||
+
+1. If you haven't yet, create a repository secret to allow you to use on-demand SQL Instances in Redgate Spawn. See https://github.com/sqlity-net/dataplatform-devops-exercises/tree/main/spawn for detailed instructions.
+   
 1. Run the GitHub Actions workflow.
    1. Find the "Module 4 Exercise 1 CI Pipeline" in the list of Workflows and click on it.
       |CI Pipeline|
@@ -109,10 +87,6 @@ Set up the GitHub Actions workflow as a simple CI Pipeline; identify the unsucce
       |![image](https://user-images.githubusercontent.com/298017/116836606-25590580-ab95-11eb-8103-c1683d86522c.png)|
       ||
    1. Based on the output you see, make the necessary changes to tests and/or code to fix the problem.
-      ||
-      |-|
-      ||
-      ||
 1. Confirm that you have fixed all the issues by checking in your code and tests and re-running the pipeline. 
    1. You are done once you get a 🟢 Success 🟢 build.
       ||
