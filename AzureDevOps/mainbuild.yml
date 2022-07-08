@@ -64,8 +64,8 @@ jobs:
         Write-Host "##vso[task.setvariable variable=containerName;isOutput=true]$containerName"
         ## Write-Host ('::add-mask::$containerPassword');
         ## Write-Host ('::add-mask::$containerName');
-      env:
-        SPAWNCTL_ACCESS_TOKEN: $(SpawnctlAccessToken)
+    env:
+      SPAWNCTL_ACCESS_TOKEN: $(SpawnctlAccessToken)
 
 
 
