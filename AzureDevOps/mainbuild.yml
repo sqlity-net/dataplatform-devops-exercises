@@ -34,6 +34,7 @@ jobs:
       targetType: 'inline'
       script: |
         echo "Downloading and installing spawnctl..."
+        New-Item -Path "$(Pipeline.Workspace)/spawnExeTmp" -ItemType directory -Force;    
         Invoke-WebRequest -Uri "https://run.spawn.cc/spawnctl.exe" -UseBasicParsing -OutFile "$(Pipeline.Workspace)/spawnExeTmp/spawnctl.exe"
         & "$(Pipeline.Workspace)/spawnExeTmp/spawnctl.exe" version
 
