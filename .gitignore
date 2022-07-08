@@ -1,4 +1,5 @@
 /DemoSolution/.vs
 **/temp/
 
+**/.DS_Store
 *.ssms_suo
