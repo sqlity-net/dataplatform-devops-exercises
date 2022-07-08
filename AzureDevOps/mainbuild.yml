@@ -3,11 +3,9 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-name: 
-- Module 4 Exercise 1 CI Pipeline
+name: Module 4 Exercise 1 CI Pipeline
 
-trigger: 
-- none
+trigger: none
 
 pool:
   vmImage: windows-latest
