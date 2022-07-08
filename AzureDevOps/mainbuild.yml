@@ -11,7 +11,7 @@ pool:
   vmImage: windows-latest
 
 jobs:
-- job: build-and-test
+- job: buildAndTest
   displayName: Build & Test
     
   steps:
