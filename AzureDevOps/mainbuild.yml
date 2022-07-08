@@ -13,7 +13,10 @@ pool:
 jobs:
 - job: buildAndTest
   displayName: Build & Test
-    
+
+  variables:
+    SPAWNCTL_ACCESS_TOKEN: $[convertToJson(stageDependencies.Create_VMs.Create_VM.outputs)]
+
   steps:
   - task: PowerShell@2
     name: CreateVars
@@ -37,6 +40,41 @@ jobs:
         New-Item -Path "$(Pipeline.Workspace)/spawnExeTmp" -ItemType directory -Force;    
         Invoke-WebRequest -Uri "https://run.spawn.cc/spawnctl.exe" -UseBasicParsing -OutFile "$(Pipeline.Workspace)/spawnExeTmp/spawnctl.exe"
         & "$(Pipeline.Workspace)/spawnExeTmp/spawnctl.exe" version
+
+  - task: PowerShell@2
+    name: createContainer
+    displayName: Create SQL Server Instance on Spawn Data-Container
+    inputs:
+      targetType: 'inline'
+      script: |
+        $dataImageName = 'mssql';
+        
+        $containerName= & "$(Pipeline.Workspace)/spawnExeTmp/spawnctl.exe" create data-container --image $dataImageName --lifetime 30m -q
+        $containerJSON= & "$(Pipeline.Workspace)/spawnExeTmp/spawnctl.exe" get data-container $containerName -o json
+        $containerInfo = ConvertFrom-JSON -inputObject $containerJSON;
+        $containerFQDN=$containerInfo.host+", "+$containerInfo.port;
+        $containerUser=$containerInfo.user;
+        $containerPassword=$containerInfo.password;
+        
+        echo "Successfully created Spawn data container '$containerName'"
+        
+        Write-Host "##vso[task.setvariable variable=containerFQDN;isOutput=true]$containerFQDN"
+        Write-Host "##vso[task.setvariable variable=containerUser;isOutput=true]$containerUser"
+        Write-Host "##vso[task.setvariable variable=containerPassword;isOutput=true]$containerPassword"
+        Write-Host "##vso[task.setvariable variable=containerName;isOutput=true]$containerName"
+        ## Write-Host ('::add-mask::$containerPassword');
+        ## Write-Host ('::add-mask::$containerName');
+
+      env:
+        SPAWNCTL_ACCESS_TOKEN: $(SpawnctlAccessToken)
+
+
+
+
+
+
+
+
 
   - script: echo Hello, world!
     displayName: 'Run a one-line script'
