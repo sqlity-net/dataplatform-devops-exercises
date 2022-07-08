@@ -15,10 +15,27 @@ jobs:
   displayName: Build & Test
     
   steps:
+  - task: PowerShell@2
+    name: CreateVars
+    displayName: Load namespace variables into ENV
+    inputs:
+      targetType: 'inline'
+      script: |
+        $sqlcmdPath = (Get-Command sqlcmd).Path.TrimEnd("\\SQLCMD.EXE");
+        $databaseName = "sqlitydemodb";
+        
+        Write-Host "##vso[task.setvariable variable=sqlcmdPath;isOutput=true]$sqlcmdPath"
+        Write-Host "##vso[task.setvariable variable=databaseName;isOutput=true]$databaseName"
+
+  - task: PowerShell@2
+    name: InstallSpawnctl
+    displayName: Install spawnctl
+    inputs:
+      targetType: 'inline'
+      script: |
+        echo "Downloading and installing spawnctl..."
+        Invoke-WebRequest -Uri "https://run.spawn.cc/spawnctl.exe" -UseBasicParsing -OutFile "$(Pipeline.Workspace)/spawnExeTmp/spawnctl.exe"
+        & "$(Pipeline.Workspace)/spawnExeTmp/spawnctl.exe" version
+
   - script: echo Hello, world!
     displayName: 'Run a one-line script'
-
-  - script: |
-      echo Add other tasks to build, test, and deploy your project.
-      echo See https://aka.ms/yaml
-    displayName: 'Run a multi-line script'
