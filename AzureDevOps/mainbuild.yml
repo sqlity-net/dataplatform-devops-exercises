@@ -46,7 +46,7 @@ jobs:
     inputs:
       targetType: 'inline'
       script: |
-        $dataImageName = 'mssql';
+        $dataImageName = 'mssql-empty:v2019';
         
         $containerName= & "$(Pipeline.Workspace)/spawnExeTmp/spawnctl.exe" create data-container --image $dataImageName --lifetime 30m -q
         $containerJSON= & "$(Pipeline.Workspace)/spawnExeTmp/spawnctl.exe" get data-container $containerName -o json
