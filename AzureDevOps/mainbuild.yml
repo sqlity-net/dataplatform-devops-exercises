@@ -27,10 +27,6 @@ jobs:
         Write-Host "##vso[task.setvariable variable=sqlcmdPath;isOutput=true]$sqlcmdPath"
         Write-Host "##vso[task.setvariable variable=databaseName;isOutput=true]$databaseName"
 
-        Write-Host $env:SPAWNCTL_ACCESS_TOKEN
-    env:
-      SPAWNCTL_ACCESS_TOKEN: $(SpawnctlAccessToken)
-
 
   - task: PowerShell@2
     name: InstallSpawnctl
@@ -42,6 +38,7 @@ jobs:
         New-Item -Path "$(Pipeline.Workspace)/spawnExeTmp" -ItemType directory -Force;    
         Invoke-WebRequest -Uri "https://run.spawn.cc/spawnctl.exe" -UseBasicParsing -OutFile "$(Pipeline.Workspace)/spawnExeTmp/spawnctl.exe"
         & "$(Pipeline.Workspace)/spawnExeTmp/spawnctl.exe" version
+
 
   - task: PowerShell@2
     name: createContainer
@@ -63,15 +60,51 @@ jobs:
         
         Write-Host "##vso[task.setvariable variable=containerFQDN;isOutput=true]$containerFQDN"
         Write-Host "##vso[task.setvariable variable=containerUser;isOutput=true]$containerUser"
-        Write-Host "##vso[task.setvariable variable=containerPassword;isOutput=true]$containerPassword"
-        Write-Host "##vso[task.setvariable variable=containerName;isOutput=true]$containerName"
-        ## Write-Host ('::add-mask::$containerPassword');
-        ## Write-Host ('::add-mask::$containerName');
+        Write-Host "##vso[task.setvariable variable=containerPassword;isOutput=true;issecret=true]$containerPassword"
+        Write-Host "##vso[task.setvariable variable=containerName;isOutput=true;issecret=true]$containerName"
     env:
       SPAWNCTL_ACCESS_TOKEN: $(SpawnctlAccessToken)
 
 
+  - task: PowerShell@2
+    name: printSQLVersionInfo
+    displayName: Print SQL Version Info
+    inputs:
+      targetType: 'inline'
+      script: |
+        Write-Host "✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ";
+        Write-Host "";
+        $DS = Invoke-Sqlcmd -ConnectionTimeout 600 -Query "SELECT SUSER_NAME() U,SYSDATETIME() T,@@VERSION V;" -ServerInstance "$env:CONTAINER_FQDN" -Username "$env:DATABASE_USERNAME" -Password "$env:DATABASE_PASSWORD" -As DataSet
+        $DS.Tables[0].Rows | %{ echo "{ $($_['U']), $($_['T']), $($_['V']) }" }    
+        Write-Host "";
+        Write-Host "✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ";
+    env:
+      CONTAINER_FQDN: $(containerFQDN)
+      SQLCMD_HOME: $(sqlcmdPath)
+      DATABASE_NAME: $(databaseName)
+      DATABASE_PASSWORD: $(containerPassword)
+      DATABASE_USERNAME: $(containerUser)
 
+
+  - task: PowerShell@2
+    name: deploy
+    displayName: Deploy Code to SQL Server Instance on Spawn and Run Tests
+    inputs:
+      targetType: 'inline'
+      script: |
+        Write-Host "✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ";
+        Write-Host "";
+        
+        & ${{ github.workspace }}\Module4-Exercise1\M4-Exercise1-Tests\build.bat "$env:CONTAINER_FQDN" "-U $env:DATABASE_USERNAME -P $env:DATABASE_PASSWORD" "$env:DATABASE_NAME"
+        
+        Write-Host "";
+        Write-Host "✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ";
+    env:
+      CONTAINER_FQDN: $(containerFQDN)
+      SQLCMD_HOME: $(sqlcmdPath)
+      DATABASE_NAME: $(databaseName)
+      DATABASE_PASSWORD: $(containerPassword)
+      DATABASE_USERNAME: $(containerUser)
 
 
 
