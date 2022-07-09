@@ -95,7 +95,7 @@ jobs:
         Write-Host "✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ";
         Write-Host "";
         
-        & ${{ github.workspace }}\Module4-Exercise1\M4-Exercise1-Tests\build.bat "$env:CONTAINER_FQDN" "-U $env:DATABASE_USERNAME -P $env:DATABASE_PASSWORD" "$env:DATABASE_NAME"
+        & $(Pipeline.Workspace)\Module4-Exercise1\M4-Exercise1-Tests\build.bat "$env:CONTAINER_FQDN" "-U $env:DATABASE_USERNAME -P $env:DATABASE_PASSWORD" "$env:DATABASE_NAME"
         
         Write-Host "";
         Write-Host "✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ";
