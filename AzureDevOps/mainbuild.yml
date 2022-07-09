@@ -24,8 +24,8 @@ jobs:
         $sqlcmdPath = (Get-Command sqlcmd).Path.TrimEnd("\\SQLCMD.EXE");
         $databaseName = "sqlitydemodb";
         
-        Write-Host "##vso[task.setvariable variable=sqlcmdPath;isOutput=true]$sqlcmdPath"
-        Write-Host "##vso[task.setvariable variable=databaseName;isOutput=true]$databaseName"
+        Write-Host "##vso[task.setvariable variable=sqlcmdPath;]$sqlcmdPath"
+        Write-Host "##vso[task.setvariable variable=databaseName;]$databaseName"
 
 
   - task: PowerShell@2
@@ -57,10 +57,10 @@ jobs:
         
         echo "Successfully created Spawn data container '$containerName'"
         
-        Write-Host "##vso[task.setvariable variable=containerFQDN;isOutput=true]$containerFQDN"
-        Write-Host "##vso[task.setvariable variable=containerUser;isOutput=true]$containerUser"
-        Write-Host "##vso[task.setvariable variable=containerPassword;isOutput=true;issecret=true]$containerPassword"
-        Write-Host "##vso[task.setvariable variable=containerName;isOutput=true;issecret=true]$containerName"
+        Write-Host "##vso[task.setvariable variable=containerFQDN;]$containerFQDN"
+        Write-Host "##vso[task.setvariable variable=containerUser;]$containerUser"
+        Write-Host "##vso[task.setvariable variable=containerPassword;;issecret=true]$containerPassword"
+        Write-Host "##vso[task.setvariable variable=containerName;;issecret=true]$containerName"
     env:
       SPAWNCTL_ACCESS_TOKEN: $(SpawnctlAccessToken)
 
