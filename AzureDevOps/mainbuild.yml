@@ -47,7 +47,6 @@ jobs:
       targetType: 'inline'
       script: |
         $dataImageName = 'mssql';
-        ## $SpawctlAccessToken = $env:SPAWNCTL_ACCESS_TOKEN
         
         $containerName= & "$(Pipeline.Workspace)/spawnExeTmp/spawnctl.exe" create data-container --image $dataImageName --lifetime 30m -q
         $containerJSON= & "$(Pipeline.Workspace)/spawnExeTmp/spawnctl.exe" get data-container $containerName -o json
@@ -73,6 +72,10 @@ jobs:
       targetType: 'inline'
       script: |
         Write-Host "✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ";
+        Write-Host "";
+        Write-Host "$env:CONTAINER_FQDN";
+        Write-Host "$env:DATABASE_USERNAME";
+        Write-Host "$env:DATABASE_PASSWORD";
         Write-Host "";
         $DS = Invoke-Sqlcmd -ConnectionTimeout 600 -Query "SELECT SUSER_NAME() U,SYSDATETIME() T,@@VERSION V;" -ServerInstance "$env:CONTAINER_FQDN" -Username "$env:DATABASE_USERNAME" -Password "$env:DATABASE_PASSWORD" -As DataSet
         $DS.Tables[0].Rows | %{ echo "{ $($_['U']), $($_['T']), $($_['V']) }" }    
