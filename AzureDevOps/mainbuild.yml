@@ -73,10 +73,6 @@ jobs:
       script: |
         Write-Host "✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ✨   ";
         Write-Host "";
-        Write-Host "$env:CONTAINER_FQDN";
-        Write-Host "$env:DATABASE_USERNAME";
-        Write-Host "$env:DATABASE_PASSWORD";
-        Write-Host "";
         $DS = Invoke-Sqlcmd -ConnectionTimeout 600 -Query "SELECT SUSER_NAME() U,SYSDATETIME() T,@@VERSION V;" -ServerInstance "$env:CONTAINER_FQDN" -Username "$env:DATABASE_USERNAME" -Password "$env:DATABASE_PASSWORD" -As DataSet
         $DS.Tables[0].Rows | %{ echo "{ $($_['U']), $($_['T']), $($_['V']) }" }    
         Write-Host "";
@@ -110,7 +106,14 @@ jobs:
       DATABASE_USERNAME: $(containerUser)
 
 
-
+  - task: PublishTestResults@2
+    inputs:
+      testResultsFormat: 'JUnit'
+      testResultsFiles: '**/*TEST*.xml'
+      searchFolder: '$(Pipeline.Workspace)'
+      mergeTestResults: true
+      failTaskOnFailedTests: true
+      testRunTitle: 'tututut'
 
 
 
