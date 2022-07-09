@@ -14,9 +14,6 @@ jobs:
 - job: buildAndTest
   displayName: Build & Test
 
-  variables:
-    SPAWNCTL_ACCESS_TOKEN: $[convertToJson(stageDependencies.Create_VMs.Create_VM.outputs)]
-
   steps:
   - task: PowerShell@2
     name: CreateVars
@@ -29,6 +26,11 @@ jobs:
         
         Write-Host "##vso[task.setvariable variable=sqlcmdPath;isOutput=true]$sqlcmdPath"
         Write-Host "##vso[task.setvariable variable=databaseName;isOutput=true]$databaseName"
+
+        Write-Host $env:SPAWNCTL_ACCESS_TOKEN
+    env:
+      SPAWNCTL_ACCESS_TOKEN: $(SpawnctlAccessToken)
+
 
   - task: PowerShell@2
     name: InstallSpawnctl
@@ -48,6 +50,7 @@ jobs:
       targetType: 'inline'
       script: |
         $dataImageName = 'mssql';
+        ## $SpawctlAccessToken = $env:SPAWNCTL_ACCESS_TOKEN
         
         $containerName= & "$(Pipeline.Workspace)/spawnExeTmp/spawnctl.exe" create data-container --image $dataImageName --lifetime 30m -q
         $containerJSON= & "$(Pipeline.Workspace)/spawnExeTmp/spawnctl.exe" get data-container $containerName -o json
