@@ -14,6 +14,12 @@ jobs:
 - job: buildAndTest
   displayName: Build & Test
 
+  variables:
+  - name: testArtifactDir 
+    value: $(Pipeline.Workspace)\output\TestResults
+  - name: databaseName
+    value: sqlitydemodb
+
   steps:
   - task: PowerShell@2
     name: CreateVars
@@ -21,11 +27,8 @@ jobs:
     inputs:
       targetType: 'inline'
       script: |
-        $sqlcmdPath = (Get-Command sqlcmd).Path.TrimEnd("\\SQLCMD.EXE");
-        $databaseName = "sqlitydemodb";
-        
+        $sqlcmdPath = (Get-Command sqlcmd).Path.TrimEnd("\\SQLCMD.EXE");        
         Write-Host "##vso[task.setvariable variable=sqlcmdPath;]$sqlcmdPath"
-        Write-Host "##vso[task.setvariable variable=databaseName;]$databaseName"
 
 
   - task: PowerShell@2
@@ -106,16 +109,36 @@ jobs:
       DATABASE_USERNAME: $(containerUser)
 
 
+  - task: PowerShell@2
+    name: creatJUnitArtifact
+    displayName: Create JUnit Artifact
+    inputs:
+      targetType: 'inline'
+      script: |
+          # Create the JUnit Artifact directory
+          $ArtifactPath = "$env:TEST_ARTIFACT_DIR";
+          $ArtifactPath;
+          New-Item -Path $ArtifactPath -ItemType directory -Force
+          
+          # Run sqlcmd to get the latest tSQLt test results as an XML file
+          & "$env:SQLCMD_HOME\sqlcmd" -i "${{ github.workspace }}\Module4-Exercise1\M4-Exercise1-Tests\GetTestOutput.script.sql" -o "$ArtifactPath\TestResults.Module4-Exercise1.xml" -S "$env:CONTAINER_FQDN" -U "$env:DATABASE_USERNAME" -P "$env:DATABASE_PASSWORD" -d "$env:DATABASE_NAME"
+          
+          # Associate the commit id with the test results
+          Set-Content -Path ($ArtifactPath+"CommitId.txt") -Value "${{ github.sha }}"
+    env:
+      TEST_ARTIFACT_DIR: $(testArtifactDir)
+      CONTAINER_FQDN: $(containerFQDN)
+      SQLCMD_HOME: $(sqlcmdPath)
+      DATABASE_NAME: $(databaseName)
+      DATABASE_PASSWORD: $(containerPassword)
+      DATABASE_USERNAME: $(containerUser)
+
+
   - task: PublishTestResults@2
     inputs:
       testResultsFormat: 'JUnit'
       testResultsFiles: '**/*TEST*.xml'
-      searchFolder: '$(Pipeline.Workspace)'
+      searchFolder: '$(testArtifactDir)'
       mergeTestResults: true
       failTaskOnFailedTests: true
-      testRunTitle: 'tututut'
-
-
-
-  - script: echo Hello, world!
-    displayName: 'Run a one-line script'
+      testRunTitle: 'All Tests'
